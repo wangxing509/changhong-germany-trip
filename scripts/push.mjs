@@ -139,10 +139,23 @@ async function main() {
   console.log(`commit: ${commit.sha}`);
 
   if (parent) {
-    await api('/git/refs/heads/main', {
-      method: 'PATCH',
-      body: JSON.stringify({ sha: commit.sha, force: false })
-    });
+    try {
+      await api('/git/refs/heads/main', {
+        method: 'PATCH',
+        body: JSON.stringify({ sha: commit.sha, force: false })
+      });
+    } catch (e) {
+      // 某些情况下 GitHub 会判定为非快进更新并返回 422，回退为强制更新
+      if (e.status === 422) {
+        console.warn('非快进更新被拒，改用 force 更新引用…');
+        await api('/git/refs/heads/main', {
+          method: 'PATCH',
+          body: JSON.stringify({ sha: commit.sha, force: true })
+        });
+      } else {
+        throw e;
+      }
+    }
   } else {
     await api('/git/refs', {
       method: 'POST',
