@@ -1,0 +1,83 @@
+{
+  "currency": "EUR",
+  "currencySymbol": "€",
+  "cnyRate": 7.7,
+  "rateNote": "参考汇率 1 EUR ≈ 7.7 CNY，实际以出行时结算汇率为准",
+  "effective": "2026 年度出差补贴标准（德国）",
+  "standards": [
+    {
+      "key": "berlin_hamburg",
+      "cities": "柏林、汉堡",
+      "citiesEn": "Berlin, Hamburg",
+      "currency": "欧元 EUR",
+      "hotel": 150,
+      "meal": 60,
+      "other": 38,
+      "total": 248
+    },
+    {
+      "key": "munich",
+      "cities": "慕尼黑",
+      "citiesEn": "München",
+      "currency": "欧元 EUR",
+      "hotel": 170,
+      "meal": 60,
+      "other": 38,
+      "total": 268
+    },
+    {
+      "key": "frankfurt",
+      "cities": "法兰克福",
+      "citiesEn": "Frankfurt",
+      "currency": "欧元 EUR",
+      "hotel": 180,
+      "meal": 60,
+      "other": 38,
+      "total": 278
+    },
+    {
+      "key": "other",
+      "cities": "其他城市",
+      "citiesEn": "Other cities",
+      "currency": "欧元 EUR",
+      "hotel": 120,
+      "meal": 60,
+      "other": 38,
+      "total": 218
+    }
+  ],
+  "columns": ["住宿", "餐饮", "其他"],
+  "appliedCities": [
+    { "city": "杜塞尔多夫", "standardKey": "other", "hotel": 120, "meal": 60, "other": 38, "nights": 15 },
+    { "city": "柏林", "standardKey": "berlin_hamburg", "hotel": 150, "meal": 60, "other": 38, "nights": 2 },
+    { "city": "法兰克福", "standardKey": "frankfurt", "hotel": 180, "meal": 60, "other": 38, "nights": 2 },
+    { "city": "因戈尔施塔特", "standardKey": "other", "hotel": 120, "meal": 60, "other": 38, "nights": 2 }
+  ],
+  "estimates": {
+    "hotelTotal": 2900,
+    "mealTotal": 1260,
+    "otherTotal": 798,
+    "grandTotal": 4958,
+    "note": "按 21 晚 × 对应城市住宿标准 + 21 天 × 餐饮 60 + 21 天 × 其他 38 测算（住宿部分按城市实际晚数加权）",
+    "detail": [
+      { "item": "住宿", "calc": "杜塞尔多夫 15 晚 × 120 + 柏林 2 晚 × 150 + 法兰克福 2 晚 × 180 + 因戈尔施塔特 2 晚 × 120", "eur": 2640 },
+      { "item": "餐饮", "calc": "21 天 × 60", "eur": 1260 },
+      { "item": "其他", "calc": "21 天 × 38", "eur": 798 },
+      { "item": "合计", "calc": "", "eur": 4698 }
+    ]
+  },
+  "mealPolicy": {
+    "breakfast": "在酒店解决（优先选含早房价，多数德国酒店早餐 12–20 欧/人，含早房价通常更划算）",
+    "lunch": "办公地/仓库附近简餐，人均 10–15 欧；工作日午间多为快餐、面包店、亚洲简餐",
+    "dinner": "酒店附近正餐，人均 20–30 欧",
+    "dailyCap": "全天餐饮合计控制在 60 欧/人/天以内"
+  },
+  "tips": [
+    "德国酒店基本不提供拖鞋、牙刷牙膏，需自备",
+    "周日绝大多数超市、商场停业，仅机场、火车站便利店营业，周六提前采购",
+    "餐厅小费惯例为账单总额 5%–10%，非强制，结账凑整留下即可",
+    "德国餐厅结账需主动叫服务员（德语 Zahlen, bitte），不会主动送账单",
+    "刷卡以 Visa 为主，小镇、公交、自动售货机大多只收现金，备好零钱",
+    "酒店入住多为 14:00 后，退房 11:00–12:00"
+  ]
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0B1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="德国长虹审计商务出行 · 一键App在手，德国出行无忧">
+<title>德国商务出行 · 审计工作组</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ========== 顶部状态栏 ========== -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-bg"></div>
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/><path d="M8 11h.01M16 11h.01"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title" id="brandTitle">德国商务出行</div>
+          <div class="brand-sub" id="brandSub">审计工作组 · 一行四人</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="btnShare" aria-label="分享">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+          <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== 主内容区 ========== -->
+  <main class="viewport" id="viewport">
+
+    <!-- ===== 首页 ===== -->
+    <section class="view" id="view-home" data-view="home">
+      <div class="pad">
+
+        <!-- 倒计时主卡 -->
+        <div class="hero-card" id="heroCard">
+          <div class="hero-glow"></div>
+          <div class="hero-grid-lines"></div>
+          <div class="hero-content">
+            <div class="hero-label" id="heroLabel">距离出发</div>
+            <div class="hero-count" id="heroCount">
+              <span class="num" id="heroNum">--</span><span class="unit" id="heroUnit">天</span>
+            </div>
+            <div class="hero-date" id="heroDate">2026年10月11日 · CA431</div>
+            <div class="hero-progress">
+              <div class="hero-progress-bar"><i id="heroBar" style="width:0%"></i></div>
+              <div class="hero-progress-meta" id="heroMeta">成都天府 → 法兰克福</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 航班卡 -->
+        <div class="section-head">
+          <h2>航班信息</h2>
+          <span class="section-tag">中国国航</span>
+        </div>
+        <div id="flightCards" class="stack"></div>
+
+        <!-- 今日 / 下一程 -->
+        <div class="section-head">
+          <h2>下一程安排</h2>
+          <span class="section-tag" id="nextTag">—</span>
+        </div>
+        <div id="nextCard"></div>
+
+        <!-- 天气概览 -->
+        <div class="section-head">
+          <h2>目的地天气</h2>
+          <a class="section-more" href="#view-outdoor" data-goto="outdoor">穿衣指数 →</a>
+        </div>
+        <div id="weatherStrip" class="hscroll"></div>
+
+        <!-- 快速入口 -->
+        <div class="section-head"><h2>快捷入口</h2></div>
+        <div class="quick-grid" id="quickGrid"></div>
+
+        <!-- 预算概览 -->
+        <div class="section-head">
+          <h2>补贴与预算</h2>
+          <a class="section-more" href="#view-stay" data-goto="stay">明细 →</a>
+        </div>
+        <div id="budgetSummary"></div>
+
+        <div class="footnote" id="homeFootnote"></div>
+      </div>
+    </section>
+
+    <!-- ===== 行程 ===== -->
+    <section class="view" id="view-itinerary" data-view="itinerary" hidden>
+      <div class="pad">
+        <div class="view-head">
+          <h1>全程行程</h1>
+          <p>2026年10月10日 – 11月2日 · 共 24 天 21 晚</p>
+        </div>
+        <div class="filter-row" id="itinFilter"></div>
+        <div class="timeline" id="timeline"></div>
+        <div class="footnote">数据来源：德国境内行程安排表（图一）</div>
+      </div>
+    </section>
+
+    <!-- ===== 食宿 ===== -->
+    <section class="view" id="view-stay" data-view="stay" hidden>
+      <div class="pad">
+        <div class="view-head">
+          <h1>住宿与餐饮</h1>
+          <p>严格对照补贴标准 · 性价比优先</p>
+        </div>
+        <div class="seg-scroll" id="stayCityTabs"></div>
+        <div id="stayBody"></div>
+      </div>
+    </section>
+
+    <!-- ===== 出行 ===== -->
+    <section class="view" id="view-outdoor" data-view="outdoor" hidden>
+      <div class="pad">
+        <div class="view-head">
+          <h1>出行与天气</h1>
+          <p>天气穿衣 · 交通票制 · 周末线路</p>
+        </div>
+        <div class="seg-scroll" id="outdoorTabs">
+          <button class="seg is-active" data-otab="weather">天气穿衣</button>
+          <button class="seg" data-otab="transport">交通票制</button>
+          <button class="seg" data-otab="weekend">周末线路</button>
+        </div>
+        <div id="outdoorBody"></div>
+      </div>
+    </section>
+
+    <!-- ===== 锦囊 ===== -->
+    <section class="view" id="view-tips" data-view="tips" hidden>
+      <div class="pad">
+        <div class="view-head">
+          <h1>出行锦囊</h1>
+          <p>出入境海关 · 安全合规 · 伴手礼</p>
+        </div>
+        <div class="seg-scroll" id="tipsTabs">
+          <button class="seg is-active" data-ttab="guide">注意事项</button>
+          <button class="seg" data-ttab="customs">出入境海关</button>
+          <button class="seg" data-ttab="checklist">核对清单</button>
+          <button class="seg" data-ttab="gift">伴手礼</button>
+        </div>
+        <div id="tipsBody"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 底部导航 ========== -->
+  <nav class="tabbar" id="tabbar">
+    <button class="tab is-active" data-view="home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+      <span>首页</span>
+    </button>
+    <button class="tab" data-view="itinerary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8 15h3"/></svg>
+      <span>行程</span>
+    </button>
+    <button class="tab" data-view="stay">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V9l9-5 9 5v11"/><path d="M3 20h18"/><path d="M8 20v-5h8v5"/><path d="M9 11h6"/></svg>
+      <span>食宿</span>
+    </button>
+    <button class="tab" data-view="outdoor">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l5.5-9 4 6 2.5-3.5L21 18z"/><circle cx="17" cy="6" r="2.2"/></svg>
+      <span>出行</span>
+    </button>
+    <button class="tab" data-view="tips">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 00-3.5 10.9c.5.4.8 1 .8 1.6h5.4c0-.6.3-1.2.8-1.6A6 6 0 0012 3z"/></svg>
+      <span>锦囊</span>
+    </button>
+  </nav>
+
+  <!-- ========== 全屏详情层 ========== -->
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-backdrop" data-sheet-close></div>
+    <div class="sheet-panel">
+      <div class="sheet-handle" data-sheet-close></div>
+      <div class="sheet-head">
+        <div>
+          <div class="sheet-kicker" id="sheetKicker"></div>
+          <h2 class="sheet-title" id="sheetTitle"></h2>
+        </div>
+        <button class="icon-btn ghost" data-sheet-close aria-label="关闭">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="sheet-body" id="sheetBody"></div>
+    </div>
+  </div>
+
+  <!-- ========== 启动遮罩 ========== -->
+  <div class="boot" id="boot">
+    <div class="boot-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/>
+      </svg>
+    </div>
+    <div class="boot-title">德国长虹商务出行</div>
+    <div class="boot-sub">一键 App 在手 · 德国出行无忧</div>
+    <div class="boot-bar"><i></i></div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+</div>
+
+<script src="data/app-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
