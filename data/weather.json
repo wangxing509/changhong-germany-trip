@@ -1,0 +1,671 @@
+{
+  "dst": {
+    "startDate": "2026-03-29",
+    "endDate": "2026-10-25",
+    "tzBefore": 6,
+    "tzAfter": 7,
+    "note": "欧盟夏令时（CEST, UTC+2）于 2026 年 10 月 25 日（10 月最后一个星期日）凌晨结束，时钟回拨 1 小时至冬令时（CET, UTC+1）。以北京时间为基准：10 月 25 日之前德国比北京晚 6 小时（tzBefore=6），10 月 25 日起晚 7 小时（tzAfter=7）。10/24→10/25 夜间多出 1 小时，跨 0 点的行程安排与回程落地时间需按新时差重新核算。"
+  },
+  "quick": [
+    {
+      "city": "杜塞尔多夫",
+      "period": "10月中旬–11月初",
+      "temp_high": 15,
+      "temp_low": 6,
+      "cond": "多云有阵雨",
+      "clothing": "防风外套+抓绒"
+    },
+    {
+      "city": "柏林",
+      "period": "10月中旬–11月初",
+      "temp_high": 14,
+      "temp_low": 5,
+      "cond": "多云转阴，风力偏大",
+      "clothing": "厚外套+毛衣"
+    },
+    {
+      "city": "法兰克福",
+      "period": "10月中旬–11月初",
+      "temp_high": 15,
+      "temp_low": 6,
+      "cond": "多云有阵雨，晨雾",
+      "clothing": "防风防水外套+薄毛衣"
+    },
+    {
+      "city": "因戈尔施塔特",
+      "period": "10月中旬–11月初",
+      "temp_high": 14,
+      "temp_low": 5,
+      "cond": "多云，清晨多雾",
+      "clothing": "厚外套+毛衣+围巾"
+    }
+  ],
+  "cities": [
+    {
+      "city": "杜塞尔多夫",
+      "period": "10月中旬（10/11–10/20）",
+      "temp_high": 15,
+      "temp_low": 9,
+      "rain_days": 9,
+      "rainfall_mm": 55,
+      "sunshine_hours": 3.5,
+      "cond": "多云有阵雨",
+      "clothing": "长袖衬衫+薄毛衣+防风外套，随身折叠伞",
+      "note": "常年值参考：白天 14–16 ℃、夜间 8–10 ℃。莱茵河沿岸湿度大，早晚体感偏凉；展会季（Messe）人流大，室内外温差明显，建议洋葱式穿着。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "杜塞尔多夫",
+      "period": "10月下旬（10/21–10/31）",
+      "temp_high": 12,
+      "temp_low": 6,
+      "rain_days": 10,
+      "rainfall_mm": 60,
+      "sunshine_hours": 3,
+      "cond": "多云转阴，多阵雨",
+      "clothing": "毛衣+厚外套（风衣/轻羽绒），围巾备用",
+      "note": "常年值参考：白天 10–13 ℃、夜间 4–7 ℃。10/25 起进入冬令时，17:00 前后即天黑，晚间行程需预留室内活动与返程照明时间。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "杜塞尔多夫",
+      "period": "11月初（11/1–11/2）",
+      "temp_high": 10,
+      "temp_low": 4,
+      "rain_days": 10,
+      "rainfall_mm": 65,
+      "sunshine_hours": 2.5,
+      "cond": "阴，间歇小雨",
+      "clothing": "保暖内衣+毛衣+厚外套，手套围巾",
+      "note": "常年值参考：白天 8–11 ℃、夜间 2–5 ℃。清晨可能出现雾或初霜，路面湿滑，通勤与会议间转场建议打车。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "柏林",
+      "period": "10月中旬（10/11–10/20）",
+      "temp_high": 14,
+      "temp_low": 7,
+      "rain_days": 8,
+      "rainfall_mm": 40,
+      "sunshine_hours": 3.5,
+      "cond": "多云，偶有阵雨",
+      "clothing": "长袖+薄毛衣+防风外套",
+      "note": "常年值参考：白天 13–15 ℃、夜间 6–8 ℃。柏林较西部城市偏冷 1–2 ℃，大陆性更强，昼夜温差大；风力较大，体感温度低于实测气温。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "柏林",
+      "period": "10月下旬（10/21–10/31）",
+      "temp_high": 11,
+      "temp_low": 5,
+      "rain_days": 9,
+      "rainfall_mm": 42,
+      "sunshine_hours": 3,
+      "cond": "多云转阴，风力偏大",
+      "clothing": "厚毛衣+防风外套（建议带内胆）",
+      "note": "常年值参考：白天 9–12 ℃、夜间 3–6 ℃。较德国西部偏冷 1–2 ℃，清晨地面可能结霜，注意防滑鞋。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "柏林",
+      "period": "11月初（11/1–11/2）",
+      "temp_high": 9,
+      "temp_low": 3,
+      "rain_days": 9,
+      "rainfall_mm": 45,
+      "sunshine_hours": 2,
+      "cond": "阴冷，晨间有雾",
+      "clothing": "保暖内衣+毛衣+羽绒或厚呢外套，手套",
+      "note": "常年值参考：白天 7–10 ℃、夜间 1–4 ℃。11 月为柏林最阴沉月份之一，日照偏少，注意情绪与体力调节。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "法兰克福",
+      "period": "10月中旬（10/11–10/20）",
+      "temp_high": 15,
+      "temp_low": 9,
+      "rain_days": 9,
+      "rainfall_mm": 55,
+      "sunshine_hours": 3.5,
+      "cond": "多云有阵雨",
+      "clothing": "长袖+薄毛衣+防风防水外套",
+      "note": "常年值参考：白天 14–16 ℃、夜间 8–10 ℃。美因河谷多雾，早晨易出现能见度下降，影响航班起降与高速通行。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "法兰克福",
+      "period": "10月下旬（10/21–10/31）",
+      "temp_high": 12,
+      "temp_low": 6,
+      "rain_days": 10,
+      "rainfall_mm": 58,
+      "sunshine_hours": 3,
+      "cond": "多云转阴，多阵雨",
+      "clothing": "毛衣+厚外套，防水鞋",
+      "note": "常年值参考：白天 10–13 ℃、夜间 4–7 ℃。法兰克福机场（FRA）为回程枢纽，深秋延误概率上升，建议转机预留 3 小时以上。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "法兰克福",
+      "period": "11月初（11/1–11/2）",
+      "temp_high": 10,
+      "temp_low": 4,
+      "rain_days": 10,
+      "rainfall_mm": 60,
+      "sunshine_hours": 2.5,
+      "cond": "阴，间歇小雨，晨雾",
+      "clothing": "保暖内衣+毛衣+厚外套",
+      "note": "常年值参考：白天 8–11 ℃、夜间 2–5 ℃。晨雾与低云可能触发航班延误或备降，回程当日务必留足缓冲。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "因戈尔施塔特",
+      "period": "10月中旬（10/11–10/20）",
+      "temp_high": 14,
+      "temp_low": 7,
+      "rain_days": 9,
+      "rainfall_mm": 50,
+      "sunshine_hours": 3.5,
+      "cond": "多云，清晨多雾",
+      "clothing": "长袖+毛衣+防风外套",
+      "note": "常年值参考：白天 13–15 ℃、夜间 6–8 ℃。巴伐利亚较西部偏冷 1–2 ℃，多瑙河谷清晨多雾，能见度可能低于 500 米，自驾需开雾灯。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "因戈尔施塔特",
+      "period": "10月下旬（10/21–10/31）",
+      "temp_high": 11,
+      "temp_low": 5,
+      "rain_days": 9,
+      "rainfall_mm": 52,
+      "sunshine_hours": 3,
+      "cond": "多云转阴，晨雾频发",
+      "clothing": "厚毛衣+厚外套，早晚加围巾",
+      "note": "常年值参考：白天 9–12 ℃、夜间 3–6 ℃。较德国西部偏冷 1–2 ℃；清晨雾天常见，高速公路 A9 段需注意限速与车距。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    },
+    {
+      "city": "因戈尔施塔特",
+      "period": "11月初（11/1–11/2）",
+      "temp_high": 9,
+      "temp_low": 3,
+      "rain_days": 10,
+      "rainfall_mm": 55,
+      "sunshine_hours": 2,
+      "cond": "阴冷，晨雾与小阵雨",
+      "clothing": "保暖内衣+毛衣+羽绒外套，手套",
+      "note": "常年值参考：白天 7–10 ℃、夜间 1–4 ℃。清晨雾区能见度低，可能出现初霜与桥面结冰，工厂参观与物流行程建议预留额外车程。",
+      "source_url": "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html"
+    }
+  ],
+  "clothingLevels": [
+    {
+      "temp_range": "15-18℃",
+      "advice": "德国秋季最常见的白天温度，室内有暖气约 20–22 ℃，外套可脱，建议分层穿脱。",
+      "layers": "内层长袖衬衫/薄T恤 → 中层薄毛衣或针织开衫 → 外层防风外套或风衣",
+      "items": [
+        "长袖衬衫（商务场合）",
+        "薄毛衣/针织开衫",
+        "防风风衣或轻便夹克",
+        "西裤或商务休闲长裤",
+        "皮鞋（正装）",
+        "折叠伞"
+      ]
+    },
+    {
+      "temp_range": "10-14℃",
+      "advice": "10 月下旬的典型白天温度，早晚明显偏凉，正装场合需注意外套与西装搭配的层次感。",
+      "layers": "内层发热内衣或厚衬衫 → 中层厚毛衣/马甲 → 外层厚风衣、呢子大衣或轻羽绒",
+      "items": [
+        "厚毛衣或羊毛马甲",
+        "厚风衣/呢子大衣（可配西装）",
+        "发热内衣（保暖打底）",
+        "厚西裤或加绒长裤",
+        "薄手套、围巾",
+        "防水皮鞋或短靴"
+      ]
+    },
+    {
+      "temp_range": "5-9℃",
+      "advice": "11 月初早晚与阴雨天温度，风大体感更冷，建议把正装外套换成中长款大衣并加围巾。",
+      "layers": "内层保暖内衣 → 中层毛衣+西装 → 外层中长款羽绒或厚呢大衣",
+      "items": [
+        "保暖内衣（上下一套）",
+        "厚毛衣",
+        "中长款羽绒服或厚呢大衣",
+        "围巾、手套、毛线帽",
+        "加绒西裤或厚长裤",
+        "保暖皮鞋或防水短靴"
+      ]
+    },
+    {
+      "temp_range": "0-4℃",
+      "advice": "夜间与清晨极端情况温度，可能出现初霜与结冰，室外停留时间要短，重点保护头部与手足。",
+      "layers": "内层抓绒/发热内衣 → 中层厚毛衣 → 外层羽绒服+防风层，必备帽、手套、围巾",
+      "items": [
+        "厚羽绒服（充绒量 100g 以上）",
+        "抓绒内衣套装",
+        "厚羊毛袜",
+        "防水保暖靴（防滑底）",
+        "厚手套、毛线帽、围巾",
+        "暖宝宝贴"
+      ]
+    }
+  ],
+  "packing": [
+    {
+      "category": "证件与文件",
+      "note": "4 人商务团组、21 晚行程，证件原件随身、复印件与电子扫描件分离存放；建议每人在手机与云端各留一份。",
+      "items": [
+        "护照（有效期需超过回程日 6 个月以上）",
+        "申根签证页或居留许可",
+        "往返机票行程单",
+        "酒店预订单（全程 21 晚）",
+        "商务邀请函（德方公司盖章原件）",
+        "旅行保险保单（含医疗与紧急救援）",
+        "驾照及认可翻译件（如安排自驾）",
+        "证件照 2 张/人（备用）",
+        "护照与签证复印件、电子扫描件",
+        "公司派遣函与营业执照英文副本"
+      ]
+    },
+    {
+      "category": "电子设备",
+      "note": "德国插座为欧标 Schuko（C/F 型，230V/50Hz），中国插头需转换器；4 人团队建议带 2 个多口插排。",
+      "items": [
+        "笔记本电脑与充电器",
+        "欧标转换插头（C/F 型）",
+        "多口 USB 插排或接线板",
+        "充电宝（≤100Wh，标识清晰，随身携带）",
+        "手机与备用数据线",
+        "移动硬盘/U 盘（演示资料备份）",
+        "无线演示器、HDMI/Type-C 转接头",
+        "降噪耳机",
+        "相机与备用电池",
+        "翻译机或备用手机（装 eSIM）"
+      ]
+    },
+    {
+      "category": "衣物（正装/商务便装/外套/鞋）",
+      "note": "21 晚行程建议按 7–8 天一组轮换，中间利用酒店洗衣服务；正装至少 2 套轮换，避免阴雨天无法晾干。",
+      "items": [
+        "正装西装 2 套（深色为主，配领带 3 条）",
+        "正装衬衫 5–6 件（易皱款建议免烫）",
+        "商务便装：休闲西裤、Polo 衫、针织衫",
+        "外套：厚风衣/呢子大衣/轻羽绒各 1 件",
+        "保暖内衣 2 套、毛衣 3 件",
+        "皮鞋 2 双（正装+商务休闲，防水优先）",
+        "运动鞋或舒适步行鞋 1 双",
+        "围巾、手套、毛线帽各 1 套",
+        "内衣袜子 8 套以上、防雨折叠伞",
+        "正装皮带、袖扣、领带夹等配件"
+      ]
+    },
+    {
+      "category": "日用品",
+      "note": "德国酒店通常不提供牙刷拖鞋，需自备；液体随身限 100ml/瓶，大瓶装请托运。",
+      "items": [
+        "牙刷、牙膏、拖鞋（酒店多不提供）",
+        "洗发水/沐浴露旅行装（≤100ml，随身）",
+        "剃须刀与刀片（刀片须托运）",
+        "护肤品、润唇膏、护手霜（德国秋季干燥）",
+        "指甲刀（须托运）、湿巾、纸巾",
+        "洗衣液旅行装、折叠晾衣绳",
+        "保温杯、密封水杯",
+        "眼罩、耳塞、颈枕（长途飞行）",
+        "雨伞 1 人 1 把、行李秤",
+        "晾衣夹、密封袋、行李牌"
+      ]
+    },
+    {
+      "category": "药品",
+      "note": "处方药务必带英文/德文说明与医生处方，量不超过个人自用；含可待因、麻黄碱等成分的药品受德国药品法限制，需提前确认。",
+      "items": [
+        "感冒药、退烧药、止咳药",
+        "肠胃药、止泻药、健胃消食片",
+        "抗过敏药（德国秋季花粉与室内尘螨）",
+        "止痛药、创可贴、消毒湿巾",
+        "晕车/晕机药",
+        "咽喉含片、眼药水",
+        "个人长期处方药（带英文处方与说明书）",
+        "口罩（N95/医用外科）",
+        "电子体温计、退热贴",
+        "润喉糖、维生素补充剂"
+      ]
+    },
+    {
+      "category": "商务与办公用品",
+      "note": "21 晚含多场正装场合与客户拜访，名片与礼品数量按 4 人×多场次估算，礼品避免奢华以符合合规要求。",
+      "items": [
+        "名片（每人 100 张以上，中英双语）",
+        "公司宣传册与产品资料（中英/中德）",
+        "笔记本、签字笔、记号笔",
+        "文件夹、文件袋、订书机",
+        "U 盘/移动硬盘（演示与合同模板）",
+        "合同模板与报价单打印件",
+        "公司徽标礼品（笔、笔记本、丝巾等，轻便合规）",
+        "印章/签字笔（如需现场签署）",
+        "计算器、便签纸",
+        "翻译好的公司简介与产品说明书"
+      ]
+    }
+  ],
+  "risks": [
+    "大雾：10 月下旬至 11 月初清晨多瑙河谷与美因河谷易出现能见度低于 500 米的浓雾，影响自驾与航班起降",
+    "风暴：秋季大西洋低压带来强风，北海与波罗的海沿岸及内陆均可能出现 8 级以上阵风，户外行程需备用方案",
+    "初霜与结冰：11 月初清晨可能出现初霜，桥面与背阴路段易结冰，注意防滑与行车安全",
+    "连续阴雨：10–11 月德国降雨天数多、日照少，影响户外参观与城市观光，需准备室内备选行程",
+    "日照骤减：冬令时切换后 16:30–17:00 即天黑，晚间通勤与返程安全性下降",
+    "温差与暖气干燥：室外 5 ℃、室内 22 ℃ 的温差易引发感冒，注意分层穿着与补水"
+  ],
+  "sunset": [
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-10-11",
+      "sunrise": "07:49",
+      "sunset": "18:50",
+      "daylight": "11h01m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-10-17",
+      "sunrise": "07:59",
+      "sunset": "18:37",
+      "daylight": "10h38m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-10-18",
+      "sunrise": "08:01",
+      "sunset": "18:35",
+      "daylight": "10h34m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-10-25",
+      "sunrise": "07:13",
+      "sunset": "17:21",
+      "daylight": "10h08m",
+      "tz": "CET (UTC+1)",
+      "note": "夏令时结束"
+    },
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-10-31",
+      "sunrise": "07:23",
+      "sunset": "17:10",
+      "daylight": "9h46m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "杜塞尔多夫",
+      "cityEn": "Dusseldorf",
+      "date": "2026-11-01",
+      "sunrise": "07:25",
+      "sunset": "17:08",
+      "daylight": "9h43m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-10-11",
+      "sunrise": "07:24",
+      "sunset": "18:22",
+      "daylight": "10h58m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-10-17",
+      "sunrise": "07:35",
+      "sunset": "18:09",
+      "daylight": "10h34m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-10-18",
+      "sunrise": "07:37",
+      "sunset": "18:07",
+      "daylight": "10h30m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-10-25",
+      "sunrise": "06:49",
+      "sunset": "16:52",
+      "daylight": "10h03m",
+      "tz": "CET (UTC+1)",
+      "note": "夏令时结束"
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-10-31",
+      "sunrise": "07:00",
+      "sunset": "16:40",
+      "daylight": "9h40m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "柏林",
+      "cityEn": "Berlin",
+      "date": "2026-11-01",
+      "sunrise": "07:02",
+      "sunset": "16:38",
+      "daylight": "9h36m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-10-11",
+      "sunrise": "07:40",
+      "sunset": "18:44",
+      "daylight": "11h04m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-10-17",
+      "sunrise": "07:50",
+      "sunset": "18:31",
+      "daylight": "10h42m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-10-18",
+      "sunrise": "07:52",
+      "sunset": "18:29",
+      "daylight": "10h38m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-10-25",
+      "sunrise": "07:03",
+      "sunset": "17:16",
+      "daylight": "10h13m",
+      "tz": "CET (UTC+1)",
+      "note": "夏令时结束"
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-10-31",
+      "sunrise": "07:13",
+      "sunset": "17:05",
+      "daylight": "9h52m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "法兰克福",
+      "cityEn": "Frankfurt",
+      "date": "2026-11-01",
+      "sunrise": "07:15",
+      "sunset": "17:03",
+      "daylight": "9h49m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-10-11",
+      "sunrise": "07:28",
+      "sunset": "18:34",
+      "daylight": "11h06m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-10-17",
+      "sunrise": "07:37",
+      "sunset": "18:22",
+      "daylight": "10h45m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-10-18",
+      "sunrise": "07:39",
+      "sunset": "18:21",
+      "daylight": "10h42m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-10-25",
+      "sunrise": "06:49",
+      "sunset": "17:07",
+      "daylight": "10h18m",
+      "tz": "CET (UTC+1)",
+      "note": "夏令时结束"
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-10-31",
+      "sunrise": "06:59",
+      "sunset": "16:57",
+      "daylight": "9h58m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "因戈尔施塔特",
+      "cityEn": "Ingolstadt",
+      "date": "2026-11-01",
+      "sunrise": "07:00",
+      "sunset": "16:55",
+      "daylight": "9h55m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-10-11",
+      "sunrise": "07:33",
+      "sunset": "18:39",
+      "daylight": "11h05m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-10-17",
+      "sunrise": "07:42",
+      "sunset": "18:26",
+      "daylight": "10h44m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-10-18",
+      "sunrise": "07:44",
+      "sunset": "18:24",
+      "daylight": "10h41m",
+      "tz": "CEST (UTC+2)",
+      "note": ""
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-10-25",
+      "sunrise": "06:55",
+      "sunset": "17:11",
+      "daylight": "10h16m",
+      "tz": "CET (UTC+1)",
+      "note": "夏令时结束"
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-10-31",
+      "sunrise": "07:05",
+      "sunset": "17:01",
+      "daylight": "9h56m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    },
+    {
+      "city": "沃尔尼茨",
+      "cityEn": "Wornitz",
+      "date": "2026-11-01",
+      "sunrise": "07:06",
+      "sunset": "16:59",
+      "daylight": "9h53m",
+      "tz": "CET (UTC+1)",
+      "note": ""
+    }
+  ],
+  "sunsetNote": "德国 2026 年夏令时 3/29 起、10/25 03:00 结束；日落时间为当地时间；NOAA Solar Calculator 算法，精度约 ±1 分钟",
+  "source_urls": [
+    "https://www.dwd.de/DE/leistungen/klimadatendeutschland/klimadatendeutschland.html",
+    "https://www.dwd.de/DE/wetter/wetterundklima_vorort/_node.html",
+    "https://climate.copernicus.eu/",
+    "https://www.timeanddate.com/sun/germany/berlin",
+    "https://www.timeanddate.com/time/change/germany/berlin"
+  ]
+}

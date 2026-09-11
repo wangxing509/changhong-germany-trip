@@ -1,0 +1,1256 @@
+{
+  "weekend_trips": [
+    {
+      "id": "cologne-cathedral-oldtown",
+      "base_city": "杜塞尔多夫",
+      "available_dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-31"
+      ],
+      "title_zh": "科隆：大教堂 + 老城 + 莱茵河畔",
+      "subtitle": "从杜塞尔多夫 1 小时直达的世界遗产一日游",
+      "theme": "世界遗产大教堂 · 老城啤酒馆 · 莱茵河景",
+      "cover": "history",
+      "highlight": "科隆大教堂（UNESCO 世界遗产，德国访问量最大的建筑）内部参观自 2026 年 7 月 1 日起收费，登塔 533 级台阶俯瞰莱茵河与老城；老城 4711 香水老店、Früh/Kölsch 啤酒馆、路德维希博物馆与罗马-日耳曼博物馆步行 10 分钟可达。",
+      "transport": "杜塞尔多夫 Hbf → 科隆 Hbf：RE/RB 区域慢车（RE1/RE5/RB27 等）约 1 小时，使用 24hTicket NRW 5 Personen 59.80 欧或 Quer-durchs-Land-Ticket；到站即达大教堂正门，全程步行即可，无需买市内票。",
+      "one_way_minutes": 60,
+      "fare_eur": "24hTicket NRW 5 Personen 59.80 欧（4 人分摊约 15 欧/人）；单程区域票约 15-18 欧/人，4 人同行明显不划算",
+      "money_saving_tip": "4 人买一张 24hTicket NRW 5 Personen（59.80 欧）比 4 张单程票便宜一半以上，且 24 小时内可无限次乘坐北威州慢车与市内公交，同一天还能顺路加去杜塞尔多夫或波恩。不要买已废止的 Schönes-Wochenende-Ticket，它 2019 年 6 月 8 日就已取消。",
+      "schedule": [
+        {
+          "time": "09:00",
+          "item": "杜塞尔多夫 Hbf 出发，乘 RE 前往科隆（约 1 小时）"
+        },
+        {
+          "time": "10:05",
+          "item": "科隆 Hbf 出站，大教堂正门拍照，购内部参观+登塔票"
+        },
+        {
+          "time": "10:30",
+          "item": "大教堂内部参观（周日仅 13:30–16:30 开放，周六 10:00–17:45）"
+        },
+        {
+          "time": "11:30",
+          "item": "登塔 533 级台阶，塔顶俯瞰莱茵河与老城"
+        },
+        {
+          "time": "12:30",
+          "item": "老城午餐：Früh am Dom 或 Brauhaus Sion，尝 Kölsch 啤酒与 Himmel un Ääd"
+        },
+        {
+          "time": "14:00",
+          "item": "老城步行：4711 香水店、市政厅、罗马-日耳曼博物馆外观"
+        },
+        {
+          "time": "15:30",
+          "item": "莱茵河畔散步 / 霍亨索伦桥爱情锁，或路德维希博物馆"
+        },
+        {
+          "time": "16:30",
+          "item": "选购伴手礼：4711 香水、Kölsch 啤酒、巧克力博物馆店"
+        },
+        {
+          "time": "17:30",
+          "item": "返程，18:30 前回到杜塞尔多夫（10 月底 17:00–17:30 已天黑）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "科隆大教堂内部参观（成人，2026/7/1 起收费）",
+          "price_eur": "12（优惠 6）"
+        },
+        {
+          "name": "登塔（成人）",
+          "price_eur": "8（优惠 4）"
+        },
+        {
+          "name": "宝库（成人）",
+          "price_eur": "8（优惠 4）"
+        },
+        {
+          "name": "登塔+宝库联票（成人）",
+          "price_eur": "12（优惠 6）"
+        },
+        {
+          "name": "24hTicket NRW 5 Personen（全团一张）",
+          "price_eur": "59.80"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "Früh am Dom 啤酒馆",
+          "name_en": "Früh am Dom",
+          "address": "Am Hof 12-18, 50667 Köln",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/科隆地方菜",
+          "specialty": "Kölsch 啤酒、Himmel un Ääd、科隆酸菜炖肉",
+          "hours": "每日约 09:00–24:00（周日营业）",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.frueh-am-dom.de/"
+        },
+        {
+          "name_zh": "Brauhaus Sion 啤酒馆",
+          "name_en": "Brauhaus Sion",
+          "address": "Unter Taschenmacher 5-7, 50667 Köln",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/科隆地方菜",
+          "specialty": "Kölsch、猪肘、莱茵醋焖牛肉",
+          "hours": "每日 11:00–24:00",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.brauhaus-sion.de/"
+        }
+      ],
+      "return_time": "17:30 从科隆 Hbf 出发，18:30 前抵达杜塞尔多夫",
+      "intensity": "低（全程平路，步行 4-6 公里，登塔 533 级台阶可选）",
+      "rainy_plan": "雨天不受影响：大教堂内部、宝库、路德维希博物馆、罗马-日耳曼博物馆、巧克力博物馆全部为室内；老城啤酒馆午餐可长时间停留；把登塔改到雨停间隙即可。",
+      "recommended": true,
+      "caution": "① 科隆大教堂 2026 年 7 月 1 日起内部参观开始收费（成人 12 欧），周日内部仅 13:30–16:30 开放（最后入场 16:15），若周日来必须把教堂安排在下午，上午先去博物馆；② 免费进入仅限北门廊祈祷/点蜡烛，不要在免费入口排队误以为可绕票；③ 周日德国商店关门，老城店铺基本不营业，伴手礼要提前在周六或机场/火车站商店购买。",
+      "source_url": "https://www.koelner-dom.de/besuch/eintrittspreise"
+    },
+    {
+      "id": "aachen-cathedral",
+      "base_city": "杜塞尔多夫",
+      "available_dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-31"
+      ],
+      "title_zh": "亚琛：查理曼大帝大教堂 + 温泉老城",
+      "subtitle": "德国西部边境的帝国古城，比科隆人少一半",
+      "theme": "加冕教堂 · 帝国宝库 · 三国交界老城",
+      "cover": "history",
+      "highlight": "亚琛大教堂是德国第一处 UNESCO 世界遗产，查理曼大帝 30 余位德意志国王加冕地，八角形穹顶与帝国宝库（Reichsschatz）保存完整；老城市政厅、温泉喷泉（Elisenbrunnen）、三国交界点（德/比/荷）都在步行范围内。",
+      "transport": "杜塞尔多夫 Hbf → 亚琛 Hbf：RE1/RE4 直达约 1 小时 25 分；也可 RE 到科隆换 RE9。用 24hTicket NRW 5 Personen（59.80 欧）全团通用。",
+      "one_way_minutes": 85,
+      "fare_eur": "24hTicket NRW 5 Personen 59.80 欧（4 人分摊约 15 欧/人）",
+      "money_saving_tip": "与科隆同属北威州，同一张 24hTicket NRW 可覆盖；若同一天只走亚琛，仍买 5 人团体票而非单人版 39.80 欧，4 人省 99 欧。大教堂内部免费（仅宝库/导览收费）。",
+      "schedule": [
+        {
+          "time": "08:30",
+          "item": "杜塞尔多夫 Hbf 出发，RE1 前往亚琛（约 1 小时 25 分）"
+        },
+        {
+          "time": "10:00",
+          "item": "亚琛 Hbf 步行至老城（约 15 分钟），Elisenbrunnen 温泉喷泉"
+        },
+        {
+          "time": "10:30",
+          "item": "亚琛大教堂内部参观（八角形穹顶、查理曼宝座）"
+        },
+        {
+          "time": "11:30",
+          "item": "大教堂宝库 Reichsschatz 参观（帝国冠冕、洛尔施福音书）"
+        },
+        {
+          "time": "12:30",
+          "item": "老城午餐：Printen 姜饼店 + 德式小馆"
+        },
+        {
+          "time": "14:00",
+          "item": "市政厅（Rathaus）与加冕大厅外观/参观"
+        },
+        {
+          "time": "15:00",
+          "item": "Printenbäckerei Klein 买亚琛姜饼 Printen，老城购物街"
+        },
+        {
+          "time": "16:00",
+          "item": "视体力前往三国交界点 Dreiländereck 或返回车站"
+        },
+        {
+          "time": "17:00",
+          "item": "返程，18:30 前回到杜塞尔多夫（10 月底 17:00–17:30 天黑）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "亚琛大教堂内部参观",
+          "price_eur": "免费（自愿捐赠建议 1-3 欧）"
+        },
+        {
+          "name": "大教堂宝库 Reichsschatz",
+          "price_eur": "约 6（优惠 4）"
+        },
+        {
+          "name": "市政厅 Rathaus 导览",
+          "price_eur": "约 5"
+        },
+        {
+          "name": "24hTicket NRW 5 Personen（全团一张）",
+          "price_eur": "59.80"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "亚琛姜饼老店 Klein",
+          "name_en": "Printen- und Gebäckfabrik Klein",
+          "address": "Friedrich-Wilhelm-Platz 12, 52062 Aachen",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式糕点/咖啡",
+          "specialty": "Aachener Printen 亚琛姜饼（原味/巧克力/坚果）",
+          "hours": "周一至周六 09:00–18:30，周日休息",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.printen-klein.de/"
+        },
+        {
+          "name_zh": "亚琛老城德式小馆（Ratskeller 一带）",
+          "name_en": "Aachen Ratskeller",
+          "address": "Markt 40, 52062 Aachen",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/莱茵地方菜",
+          "specialty": "酸菜炖猪肘、Printen 甜品、地方啤酒",
+          "hours": "每日 11:30–22:00",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.ratskeller-aachen.de/"
+        }
+      ],
+      "return_time": "17:00 从亚琛 Hbf 出发，18:30 前回到杜塞尔多夫",
+      "intensity": "低（老城内步行 4-5 公里，全程平路）",
+      "rainy_plan": "大教堂、宝库、市政厅全部室内；老城商店街有拱廊可逛；雨天可放弃三国交界点，改为在 Printen 老店和咖啡馆久坐。",
+      "recommended": true,
+      "caution": "① 大教堂内部礼拜时间谢绝游客参观，10 月底周日上午及每日固定礼拜时段可能限流，出发前查官网当日开放时间；② 宝库与市政厅导览班次有限，错过只能外观；③ 周日老城商铺基本关门，Printen 伴手礼要在周六买。",
+      "source_url": "https://www.aachenerdom.de/"
+    },
+    {
+      "id": "essen-zeche-zollverein",
+      "base_city": "杜塞尔多夫",
+      "available_dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-31"
+      ],
+      "title_zh": "埃森：关税同盟煤矿工业区（世界遗产）+ 红点设计博物馆",
+      "subtitle": "鲁尔区工业文化地标，室内为主、雨天也不怕",
+      "theme": "工业遗产 · 包豪斯建筑 · 设计博物馆",
+      "cover": "industrial",
+      "highlight": "Zeche Zollverein 是 UNESCO 世界遗产、被誉为「世界上最美的煤矿」，XII 号矿井井架是鲁尔区标志；同园区内有鲁尔博物馆（Ruhr Museum）与红点设计博物馆（Red Dot Design Museum），一整天可全部走完且几乎全在室内。",
+      "transport": "杜塞尔多夫 Hbf → 埃森 Hbf：RE/RB 约 30-40 分钟；埃森 Hbf 乘有轨电车 107 路至 Zollverein 站（约 15 分钟）。用 24hTicket NRW 5 Personen（59.80 欧）含市内公交。",
+      "one_way_minutes": 55,
+      "fare_eur": "24hTicket NRW 5 Personen 59.80 欧（4 人分摊约 15 欧/人）",
+      "money_saving_tip": "关税同盟矿区地面区域（含井架、园区步道）免费开放，只有鲁尔博物馆与红点设计博物馆收费；买「鲁尔博物馆+红点」联票比分开买便宜。24hTicket NRW 已含埃森市内电车，不要重复买市内票。",
+      "schedule": [
+        {
+          "time": "09:00",
+          "item": "杜塞尔多夫 Hbf 出发，RE 前往埃森（约 35 分钟）"
+        },
+        {
+          "time": "09:45",
+          "item": "埃森 Hbf 换乘 107 路电车至 Zollverein"
+        },
+        {
+          "time": "10:15",
+          "item": "园区导览：XII 号矿井井架、锅炉房、洗煤厂外观"
+        },
+        {
+          "time": "11:30",
+          "item": "鲁尔博物馆 Ruhr Museum（原洗煤厂改造，工业史）"
+        },
+        {
+          "time": "13:00",
+          "item": "园区内午餐：Casino Zollverein 或 RUHR.VISITORCENTER 咖啡"
+        },
+        {
+          "time": "14:30",
+          "item": "红点设计博物馆 Red Dot Design Museum"
+        },
+        {
+          "time": "16:00",
+          "item": "纪念品店：鲁尔区工业设计文创、Zollverein 主题商品"
+        },
+        {
+          "time": "16:45",
+          "item": "返回埃森 Hbf，采购伴手礼（Kaufland/Galeria）"
+        },
+        {
+          "time": "17:30",
+          "item": "返程，18:15 前回到杜塞尔多夫"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "Zollverein 园区地面区域",
+          "price_eur": "免费"
+        },
+        {
+          "name": "鲁尔博物馆 Ruhr Museum",
+          "price_eur": "约 8（优惠 5）"
+        },
+        {
+          "name": "红点设计博物馆",
+          "price_eur": "约 9（优惠 5）"
+        },
+        {
+          "name": "24hTicket NRW 5 Personen（全团一张）",
+          "price_eur": "59.80"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "Casino Zollverein 餐厅",
+          "name_en": "Casino Zollverein",
+          "address": "Gelsenkirchener Str. 181, 45309 Essen",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/现代欧陆",
+          "specialty": "鲁尔区改良德餐、园区景观位",
+          "hours": "周二至周日 12:00–22:00，周一休息",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.casino-zollverein.de/"
+        },
+        {
+          "name_zh": "埃森市中心德式酒馆",
+          "name_en": "Brauhaus am Rathaus (Essen)",
+          "address": "Kettwiger Str. 25, 45127 Essen",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/鲁尔地方菜",
+          "specialty": "本地啤酒、猪肘、Currywurst",
+          "hours": "每日 11:00–23:00",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.essen.de/"
+        }
+      ],
+      "return_time": "17:30 从埃森出发，18:15 前回到杜塞尔多夫",
+      "intensity": "低（园区步行 5-7 公里，平坦，室内外结合）",
+      "rainy_plan": "这是雨天首选线路：鲁尔博物馆、红点设计博物馆、锅炉房与导览几乎全在室内，只有井架拍照需要短暂外出；建议雨天把导览时间加长，直接待到闭馆再回。",
+      "recommended": true,
+      "caution": "① 鲁尔博物馆与红点设计博物馆周一闭馆，周日正常开放，务必按当日日期核对官网；② 园区面积大、各馆之间步行 10-15 分钟，10 月底 17:00 后迅速天黑，不要拖到 17:30 后还在园区内步行；③ 埃森 Hbf 至园区电车班次较密但周末稍减，返程预留 15 分钟换乘。",
+      "source_url": "https://www.zollverein.de/"
+    },
+    {
+      "id": "dusseldorf-oldtown-medienhafen",
+      "base_city": "杜塞尔多夫",
+      "available_dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-31"
+      ],
+      "title_zh": "杜塞尔多夫：老城 Altstadt + 媒体港 + 国王大道",
+      "subtitle": "零交通成本的本地半日/一日城市线，适合倒时差与雨天",
+      "theme": "老城啤酒街 · 媒体港建筑 · 莱茵河畔购物",
+      "cover": "city",
+      "highlight": "「世界最长吧台」老城 260 余家酒馆与 Altbier 老啤酒；媒体港 Gehry 建筑群、Neuer Zollhof 扭曲立面、Rheinturm 电视塔；国王大道（Königsallee）奢侈品街与日本街（Immermannstraße）亚洲餐饮，全部可用步行+市内交通完成。",
+      "transport": "住宿地步行或乘 U-Bahn/S-Bahn 至 Heinrich-Heine-Allee / Königsallee 站；全天用 24hTicket NRW 5 Personen（59.80 欧）覆盖市内交通，也可买市内短途票（Kurzstrecke 约 2 欧）。",
+      "one_way_minutes": 15,
+      "fare_eur": "步行 0 欧；市内短途票约 2 欧/人；24hTicket NRW 5 Personen 59.80 欧（若还要出城才划算）",
+      "money_saving_tip": "纯市内线不必买 24 小时票，老城—媒体港—国王大道全程步行 30-40 分钟；只有要去埃森/科隆等外城时才升级为 24hTicket NRW。老城 Altbier 酒馆多为自酿，价格比旅游区餐厅低。",
+      "schedule": [
+        {
+          "time": "09:30",
+          "item": "老城市政厅（Rathaus）与 Marktplatz 广场"
+        },
+        {
+          "time": "10:15",
+          "item": "Schlossturm 船舶博物馆与莱茵河畔步道 Rheinpromenade"
+        },
+        {
+          "time": "11:00",
+          "item": "老城 Altbier 酒馆巡礼（Zum Uerige / Füchschen），尝 Altbier"
+        },
+        {
+          "time": "12:30",
+          "item": "老城午餐：猪肘或 Rheinischer Sauerbraten"
+        },
+        {
+          "time": "14:00",
+          "item": "步行/轻轨至媒体港 MedienHafen：Gehry 建筑群、Neuer Zollhof 拍照"
+        },
+        {
+          "time": "15:30",
+          "item": "Rheinturm 电视塔观景台（视天气，可选登塔）"
+        },
+        {
+          "time": "16:30",
+          "item": "国王大道 Königsallee 购物，或 Immermannstraße 日本街买亚洲食品"
+        },
+        {
+          "time": "17:30",
+          "item": "返回酒店（10 月底 17:00–17:30 天黑，晚间不安排户外）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "老城步行游览",
+          "price_eur": "免费"
+        },
+        {
+          "name": "Schlossturm 船舶博物馆",
+          "price_eur": "约 5（优惠 2.50）"
+        },
+        {
+          "name": "Rheinturm 观景台",
+          "price_eur": "约 7"
+        },
+        {
+          "name": "市内短途票 Kurzstrecke",
+          "price_eur": "约 2"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "Zum Uerige 自酿老啤馆",
+          "name_en": "Zum Uerige",
+          "address": "Berger Str. 1, 40213 Düsseldorf",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/莱茵地方菜",
+          "specialty": "Uerige Altbier 自酿老啤酒、Himmel un Ääd、血肠",
+          "hours": "每日 10:00–24:00（周日营业）",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.uerige.de/"
+        },
+        {
+          "name_zh": "日本街拉面/日料（Immermannstraße）",
+          "name_en": "Immermannstraße Japanese restaurants",
+          "address": "Immermannstr. 35, 40210 Düsseldorf",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "日式",
+          "specialty": "拉面、寿司、日式咖喱（适合想吃亚洲口味的团组）",
+          "hours": "多数店 11:30–22:00，部分周一休息",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.duesseldorf-tourismus.de/"
+        }
+      ],
+      "return_time": "17:30 前回到酒店（无需长途返程）",
+      "intensity": "低（市内步行 6-8 公里，可随时坐下喝咖啡）",
+      "rainy_plan": "全程市内：老城酒馆、Schlossturm 博物馆、Kunstpalast 艺术宫、K21 美术馆均为室内；媒体港拍照可在雨停间隙完成；也可改走 Königsallee 与 Galeria 商场购物避雨。",
+      "recommended": true,
+      "caution": "① 周日老城酒馆与餐厅仍营业，但商店（国王大道、Galeria、日本街超市）几乎全部关门，购物必须安排在周六；② 10/31 是周六且万圣节前后，老城部分酒馆晚间有活动、人流量大，若当晚要早返程请避开 19:00 后的老城；③ Rheinturm 观景台受天气影响可能能见度差，雨天不必强行登塔。",
+      "source_url": "https://www.duesseldorf-tourismus.de/"
+    },
+    {
+      "id": "heidelberg-castle-oldtown",
+      "base_city": "法兰克福",
+      "available_dates": [
+        "2026-10-25"
+      ],
+      "title_zh": "海德堡：城堡 + 老城 + 哲学家小径",
+      "subtitle": "法兰克福出发 1 小时，德国浪漫主义经典一日游",
+      "theme": "城堡废墟 · 大学老城 · 内卡河景",
+      "cover": "castle",
+      "highlight": "海德堡城堡是德国最著名的城堡废墟，世界最大葡萄酒桶（Großes Fass）与德国药房博物馆在宫内；老城 Hauptstraße 步行街、老桥（Alte Brücke）、圣灵大教堂、哲学家小径（Philosophenweg）俯瞰内卡河与城堡全景，秋冬由绿转红的山林尤其上镜。",
+      "transport": "法兰克福 Hbf → 海德堡 Hbf：IC/RE 直达约 1 小时（RE 较慢约 1 小时 20 分）；海德堡 Hbf 乘 33 路公交或 5/23 路电车至 Rathaus/Bergbahn 站；城堡可乘 Bergbahn 缆车或步行上山（约 15 分钟台阶）。用 Baden-Württemberg-Ticket 4 人 54 欧。",
+      "one_way_minutes": 60,
+      "fare_eur": "Baden-Württemberg-Ticket 4 人 54 欧（首人 27 欧，每增 1 人 +9 欧），全天 00:00–次日 03:00 有效",
+      "money_saving_tip": "4 人用 Baden-Württemberg-Ticket（54 欧）而不是买 4 张 ICE/IC 全价票（单程可能超过 25 欧/人）；注意该票只含 RB/RE/IRE/S-Bahn 等慢车，若搭 IC/ICE 需另购票。城堡门票含 Bergbahn 缆车往返，比单独买缆车票划算。",
+      "schedule": [
+        {
+          "time": "08:00",
+          "item": "法兰克福 Hbf 出发，搭乘直达 RE 前往海德堡"
+        },
+        {
+          "time": "09:20",
+          "item": "海德堡 Hbf 换乘公交至老城 Bismarckplatz"
+        },
+        {
+          "time": "09:45",
+          "item": "乘 Bergbahn 缆车（或步行）上城堡"
+        },
+        {
+          "time": "10:15",
+          "item": "海德堡城堡参观：大酒桶、药房博物馆、露台俯瞰老城"
+        },
+        {
+          "time": "12:00",
+          "item": "下山至老城午餐（Hauptstraße 一带德式餐厅）"
+        },
+        {
+          "time": "13:30",
+          "item": "老城步行：圣灵大教堂、老桥、铜猴雕像"
+        },
+        {
+          "time": "15:00",
+          "item": "哲学家小径 Philosophenweg 俯瞰内卡河与城堡全景"
+        },
+        {
+          "time": "16:15",
+          "item": "老城伴手礼：海德堡学生之吻巧克力、德国药房文创"
+        },
+        {
+          "time": "17:00",
+          "item": "返回海德堡 Hbf，18:15 前抵达法兰克福"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "海德堡城堡门票含 Bergbahn 缆车往返",
+          "price_eur": "约 10-12（优惠约 6）"
+        },
+        {
+          "name": "城堡庭院（不含宫内）",
+          "price_eur": "约 5"
+        },
+        {
+          "name": "Baden-Württemberg-Ticket（4 人）",
+          "price_eur": "54"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "海德堡老城德式餐厅（Hauptstraße）",
+          "name_en": "Zum Roten Ochsen",
+          "address": "Hauptstr. 217, 69117 Heidelberg",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/巴登地方菜",
+          "specialty": "百年学生酒馆、猪肘、巴登葡萄酒",
+          "hours": "周二至周六 17:00–24:00（白天营业时间请查官网）",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.roter-ochsen.de/"
+        },
+        {
+          "name_zh": "海德堡老桥旁咖啡馆/小馆",
+          "name_en": "Café Knösel",
+          "address": "Haspelgasse 20, 69117 Heidelberg",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式咖啡馆/甜品",
+          "specialty": "海德堡「学生之吻」巧克力与蛋糕",
+          "hours": "周日多数时段营业，周一常休",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.cafeknoesel.de/"
+        }
+      ],
+      "return_time": "17:00 从海德堡 Hbf 出发，18:15 前回到法兰克福",
+      "intensity": "中（城堡上山台阶+哲学家小径有坡度，步行 6-8 公里）",
+      "rainy_plan": "城堡内的药房博物馆、大酒桶厅为室内，可避雨；老城可改逛 Kurpfälzisches 博物馆与大学图书馆；雨中哲学家小径路滑，建议改为老桥对岸平路河畔步道。",
+      "recommended": true,
+      "caution": "① 10/25 当天德国夏令时结束（03:00 时钟回调 1 小时至 02:00），列车时刻表仍按当地时间运行，返程车次务必以 DB 应用显示的当地时间为准，别按前一天的习惯推算；② 当天约 17:00–17:30 天黑，哲学家小径务必在 16:30 前走完；③ 周日海德堡老城商铺多数关门，仅餐厅咖啡馆营业，伴手礼要提前备好或在机场买。",
+      "source_url": "https://www.schloss-heidelberg.de/"
+    },
+    {
+      "id": "ruedesheim-rhine-valley",
+      "base_city": "法兰克福",
+      "available_dates": [
+        "2026-10-25"
+      ],
+      "title_zh": "吕德斯海姆 + 莱茵河谷：经宾根中转的葡萄园线路",
+      "subtitle": "法兰克福 Hbf → RE2 → 宾根 Bingen Hbf（约 1 小时）→ 渡轮/步行至吕德斯海姆",
+      "theme": "莱茵河谷世界遗产 · 葡萄园 · 缆车观景",
+      "cover": "river",
+      "highlight": "莱茵河谷中上游（Oberes Mittelrheintal）是 UNESCO 世界遗产，吕德斯海姆 Drosselgasse 酒巷、画眉鸟巷、尼德瓦尔德纪念碑（Niederwalddenkmal）；缆车（Seilbahn Rüdesheim）2026 年 3 月 21 日至 11 月 1 日运营，单程 7.50 欧、往返 12 欧，从葡萄园上空俯瞰莱茵河。",
+      "transport": "2026/7/10–12/12 莱茵河右岸铁路（Troisdorf–Wiesbaden 段）大整修，吕德斯海姆、阿斯曼斯豪森站无列车服务，DB 提供巴士替代（吕德斯海姆–威斯巴登每 2 小时一班）。推荐路线：法兰克福 Hbf → RE2 → 宾根 Bingen Hbf（约 1 小时）→ 渡轮或步行过桥至吕德斯海姆。",
+      "one_way_minutes": 60,
+      "fare_eur": "Rheinland-Pfalz/Saarland-Ticket 4 人 60 欧；缆车往返 12 欧/人（单程 7.50 欧）；宾根–吕德斯海姆渡轮约 3-4 欧/人",
+      "money_saving_tip": "4 人用 Rheinland-Pfalz/Saarland-Ticket（60 欧）覆盖法兰克福—宾根—吕德斯海姆一带慢车，比单独买票省；缆车买单程上行+步行下山比往返更省（省 4.50 欧/人）且沿线葡萄园步道风景好。2026 年 Ring-Tour / Romantik-Tour / 阿斯曼斯豪森吊椅因故障停运，联票不可用，不要买联票。",
+      "schedule": [
+        {
+          "time": "08:00",
+          "item": "法兰克福 Hbf 出发，乘 RE2 前往宾根 Bingen Hbf"
+        },
+        {
+          "time": "09:05",
+          "item": "宾根 Hbf 转渡轮/步行过桥至吕德斯海姆（注意不是火车）"
+        },
+        {
+          "time": "09:45",
+          "item": "吕德斯海姆 Drosselgasse 酒巷与老城漫步"
+        },
+        {
+          "time": "10:30",
+          "item": "乘 Seilbahn 缆车（2026/3/21–11/1 运营）上行至尼德瓦尔德"
+        },
+        {
+          "time": "11:15",
+          "item": "尼德瓦尔德纪念碑 Niederwalddenkmal，俯瞰莱茵河谷"
+        },
+        {
+          "time": "12:30",
+          "item": "下山，午餐：酒庄餐厅或 Drosselgasse 德式小馆"
+        },
+        {
+          "time": "14:00",
+          "item": "葡萄酒庄品鉴与购买（雷司令、冰酒 Eiswein、Sekt）"
+        },
+        {
+          "time": "15:30",
+          "item": "莱茵河畔步道 / 音乐盒博物馆（Siebenstein 一带）"
+        },
+        {
+          "time": "16:15",
+          "item": "渡轮返回宾根，乘 RE2 回法兰克福"
+        },
+        {
+          "time": "17:30",
+          "item": "抵法兰克福（10 月底 17:00–17:30 天黑，务必 16:15 前动身）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "Seilbahn Rüdesheim 单程",
+          "price_eur": "7.50"
+        },
+        {
+          "name": "Seilbahn Rüdesheim 往返",
+          "price_eur": "12"
+        },
+        {
+          "name": "宾根–吕德斯海姆渡轮",
+          "price_eur": "约 3-4"
+        },
+        {
+          "name": "Rheinland-Pfalz/Saarland-Ticket（4 人）",
+          "price_eur": "60"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "吕德斯海姆酒巷德式餐厅",
+          "name_en": "Drosselgasse restaurants (Rüdesheim)",
+          "address": "Drosselgasse 1-15, 65385 Rüdesheim am Rhein",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/莱茵地方菜",
+          "specialty": "雷司令、Sekt 起泡酒、猪肘、Rüdesheimer Kaffee（火焰咖啡）",
+          "hours": "多数店 11:00–22:00，周日营业；旅游淡季部分店休息",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.ruedesheim.de/"
+        },
+        {
+          "name_zh": "吕德斯海姆酒庄餐厅",
+          "name_en": "Weingut / Vinothek Rüdesheim",
+          "address": "Am Rottland / Oberstraße, 65385 Rüdesheim am Rhein",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "葡萄酒庄/小食",
+          "specialty": "Riesling 品鉴、酒庄直购（可退税）",
+          "hours": "周二至周日 10:00–18:00，周一常休",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.ruedesheim.de/"
+        }
+      ],
+      "return_time": "16:15 从吕德斯海姆动身（渡轮+RE2），17:30 前回到法兰克福",
+      "intensity": "中（老城+缆车+葡萄园步道，步行 5-7 公里含上坡）",
+      "rainy_plan": "雨天缆车视野差且山上路滑，建议放弃缆车，改走吕德斯海姆老城酒巷、音乐盒博物馆（Siebenstein）、葡萄酒庄品鉴室内活动；返程巴士/渡轮在雨天可能更拥挤，提前一班出发。",
+      "recommended": true,
+      "caution": "① 2026/7/10–12/12 莱茵河右岸铁路（Troisdorf–Wiesbaden 段）大整修，覆盖整个行程期，吕德斯海姆与阿斯曼斯豪森站无列车服务，DB 巴士替代每 2 小时才一班，千万不要按旧时刻表买直达吕德斯海姆的火车票；② 莱茵河上的平交道口部分永久关闭，自驾同样受影响；③ 2026 年 Ring-Tour / Romantik-Tour / 阿斯曼斯豪森吊椅因故障停运，缆车联票不可用，只能买单程或往返票；④ 10/25 当天夏令时结束且周日商店关门，酒庄品鉴需提前预约。",
+      "source_url": "https://www.ruedesheim.de/"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-daytrip",
+      "base_city": "法兰克福",
+      "available_dates": [
+        "2026-10-25"
+      ],
+      "title_zh": "罗滕堡：中世纪小镇一日往返（当天往返过于紧张，不推荐）",
+      "subtitle": "法兰克福出发单程约 2.5-3 小时且需多次换乘，10 月底天黑前实际游览不足 4 小时",
+      "theme": "中世纪城墙 · 半木屋老城 · 圣诞博物馆",
+      "cover": "castle",
+      "highlight": "罗滕堡（Rothenburg ob der Tauber）是德国保存最完整的中世纪小镇，城墙步道可环城一周，Plönlein 小广场、中世纪犯罪博物馆、Käthe Wohlfahrt 圣诞博物馆与全年圣诞市场，德语圣诞村氛围最浓。",
+      "transport": "法兰克福 Hbf → 罗滕堡：需经 Würzburg 或 Ansbach 换乘 2 次，单程约 2 小时 45 分至 3 小时 15 分（无直达慢车）；当天往返意味着 5.5-6.5 小时在车上。",
+      "one_way_minutes": 175,
+      "fare_eur": "Baden-Württemberg-Ticket 4 人 54 欧（仅慢车，含换乘），但换乘次数多、容错率低；错过一班可能等 1 小时",
+      "money_saving_tip": "4 人仍可用 Baden-Württemberg-Ticket（54 欧）覆盖慢车段，但这条线路的真正成本是时间而非票价：往返 6 小时车程换 3-4 小时游览，性价比全表最低。更划算的替代是把这一天换成海德堡或美因茨，同样 54-60 欧但省 2 小时车程。",
+      "schedule": [
+        {
+          "time": "07:00",
+          "item": "法兰克福 Hbf 出发（首班慢车，需极早出发）"
+        },
+        {
+          "time": "09:45",
+          "item": "换乘 2 次后抵达罗滕堡车站（已耗时约 2 小时 45 分）"
+        },
+        {
+          "time": "10:15",
+          "item": "步行入老城，Marktplatz 市政厅与市议会宴厅钟楼"
+        },
+        {
+          "time": "11:15",
+          "item": "Plönlein 小广场 + 城墙步道环城一段"
+        },
+        {
+          "time": "12:30",
+          "item": "老城午餐（Schneeball 雪球甜点必试）"
+        },
+        {
+          "time": "13:45",
+          "item": "Käthe Wohlfahrt 圣诞村 / 德国圣诞博物馆"
+        },
+        {
+          "time": "15:00",
+          "item": "中世纪犯罪博物馆或圣雅各教堂（St. Jakob）"
+        },
+        {
+          "time": "15:45",
+          "item": "必须返回车站，赶 16:00 前后班次"
+        },
+        {
+          "time": "19:00",
+          "item": "抵达法兰克福（天已全黑，全天户外时间不足 5 小时）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "城墙步道",
+          "price_eur": "免费（建议捐赠 2 欧）"
+        },
+        {
+          "name": "德国圣诞博物馆",
+          "price_eur": "约 5"
+        },
+        {
+          "name": "中世纪犯罪博物馆",
+          "price_eur": "约 8"
+        },
+        {
+          "name": "Baden-Württemberg-Ticket（4 人）",
+          "price_eur": "54"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "罗滕堡老城德式餐厅",
+          "name_en": "Restaurant Marktplatz / Zur Höll",
+          "address": "Marktplatz 8 / Burggasse 8, 91541 Rothenburg ob der Tauber",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "德式/法兰肯地方菜",
+          "specialty": "Schneeball 雪球甜点、法兰肯葡萄酒、猪肘",
+          "hours": "11:00–21:00，周日多数营业；部分老店周一休",
+          "open_sunday": null,
+          "reservation_needed": true,
+          "source_url": "https://www.rothenburg.de/"
+        }
+      ],
+      "return_time": "15:45 必须动身，约 19:00 抵达法兰克福",
+      "intensity": "高（往返 6 小时车程+换乘 2 次，老城步行 5 公里）",
+      "rainy_plan": "雨天更不建议：老城商铺虽为室内，但往返换乘在雨天拖行李/等车体验差，且错过班次成本极高；雨天应改走法兰克福市内（施泰德博物馆、罗马广场、歌德故居）或改海德堡。",
+      "recommended": false,
+      "caution": "当天往返过于紧张：法兰克福往返罗滕堡单程约 2 小时 45 分 - 3 小时 15 分且需换乘 2 次，往返 6 小时以上；10 月底 17:00–17:30 即天黑，实际可游览时间不足 4 小时，而周日商店全部关门，圣诞博物馆与 Käthe Wohlfahrt 之外的购物体验为零。若一定要去，建议改为在罗滕堡或纽伦堡住宿一晚，把行程拆成两天。",
+      "source_url": "https://www.rothenburg.de/"
+    },
+    {
+      "id": "amsterdam-daytrip-from-dusseldorf",
+      "base_city": "杜塞尔多夫",
+      "available_dates": [
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-31"
+      ],
+      "title_zh": "阿姆斯特丹：杜塞尔多夫一日往返（当天往返过于紧张，不推荐）",
+      "subtitle": "单程 2 小时 15 分 - 2 小时 40 分，其中还含 ICE 强制订座，天黑前仅 4 小时可用",
+      "theme": "运河城市 · 博物馆 · 荷兰老城",
+      "cover": "river",
+      "highlight": "阿姆斯特丹运河带（UNESCO 世界遗产）、国立博物馆 Rijksmuseum 与梵高博物馆、约旦区（Jordaan）运河街巷、水坝广场与花市，城市本身极具吸引力。",
+      "transport": "杜塞尔多夫 Hbf → 阿姆斯特丹 Centraal：ICE International 直达约 2 小时 15 分（通常需订座，旺季易满），或经 Venlo 的慢车换乘约 3 小时以上。当天往返约 5 小时在车上。",
+      "one_way_minutes": 135,
+      "fare_eur": "ICE 直达单程 40-60 欧/人（提前买 Sparpreis 可低至 30 欧左右，但不可改签）；4 人往返总价 240-480 欧，远超德国境内任何一日游",
+      "money_saving_tip": "德国境内州票（24hTicket NRW 59.80 欧/5 人、Quer-durchs-Land-Ticket 4 人 87 欧）在荷兰境内无效，阿姆斯特丹线拿不到任何 4 人团体优惠；若真要去，改用周末一天往返＋提前 1-2 个月抢 ICE Sparpreis，或干脆改为在阿姆斯特丹住一晚。",
+      "schedule": [
+        {
+          "time": "06:30",
+          "item": "杜塞尔多夫 Hbf 出发（必须赶首班 ICE）"
+        },
+        {
+          "time": "08:45",
+          "item": "抵达阿姆斯特丹 Centraal，出站即运河区"
+        },
+        {
+          "time": "09:15",
+          "item": "水坝广场、王宫外观、花市（Bloemenmarkt）"
+        },
+        {
+          "time": "10:30",
+          "item": "国立博物馆 Rijksmuseum（伦勃朗《夜巡》）"
+        },
+        {
+          "time": "13:00",
+          "item": "运河边午餐/荷兰小吃（bitterballen、stroopwafel）"
+        },
+        {
+          "time": "14:00",
+          "item": "约旦区 Jordaan 运河街巷、九小街（De 9 Straatjes）"
+        },
+        {
+          "time": "15:30",
+          "item": "运河游船（1 小时）或梵高博物馆（视预约）"
+        },
+        {
+          "time": "16:30",
+          "item": "必须返回 Centraal 车站，赶 17:00 前后 ICE"
+        },
+        {
+          "time": "19:30",
+          "item": "抵达杜塞尔多夫（19:00 后，德国已天黑 2 小时）"
+        }
+      ],
+      "tickets": [
+        {
+          "name": "ICE 杜塞尔多夫–阿姆斯特丹单程",
+          "price_eur": "40-60（Sparpreis 约 30 起，需订座）"
+        },
+        {
+          "name": "国立博物馆 Rijksmuseum",
+          "price_eur": "约 25"
+        },
+        {
+          "name": "梵高博物馆（需线上预约）",
+          "price_eur": "约 24"
+        },
+        {
+          "name": "运河游船",
+          "price_eur": "约 18-20"
+        }
+      ],
+      "restaurants": [
+        {
+          "name_zh": "阿姆斯特丹荷兰小馆（约旦区）",
+          "name_en": "Café / Eetcafé in Jordaan",
+          "address": "Jordaan, 1015 Amsterdam",
+          "area": "",
+          "price_eur": 0,
+          "cuisine": "荷兰菜/小酒馆",
+          "specialty": "bitterballen 炸肉丸、stamppot、stroopwafel 焦糖华夫",
+          "hours": "多数 11:00–23:00，周日营业",
+          "open_sunday": null,
+          "reservation_needed": false,
+          "source_url": "https://www.iamsterdam.com/"
+        }
+      ],
+      "return_time": "16:30 必须动身，约 19:30 抵达杜塞尔多夫",
+      "intensity": "高（往返 5 小时车程+市区高强度步行 8-10 公里）",
+      "rainy_plan": "雨天将被迫全程转为博物馆室内，而 Rijksmuseum/梵高博物馆需提前预约且热门时段售罄，临时改计划几乎必然失败；雨天运河游船视野也差。整体不值得。",
+      "recommended": false,
+      "caution": "当天往返过于紧张：杜塞尔多夫往返阿姆斯特丹单程 2 小时 15 分（ICE，通常需订座）至 2 小时 40 分，往返 5 小时以上；10 月底 17:00–17:30 天黑，实际可游览时间仅约 4 小时，而任何博物馆延误或 ICE 晚点都会导致无法当日返回（末班车后无替代方案）。且 ICE 属跨国线路，Quer-durchs-Land-Ticket、24hTicket NRW 均无效，4 人总花费 240 欧以上。强烈建议改为科隆或埃森，或专门安排周末在阿姆斯特丹住一晚。",
+      "source_url": "https://www.nsinternational.com/"
+    }
+  ],
+  "souvenirs": [
+    {
+      "name_zh": "双立人 Zwilling 厨具（刀具/锅具）",
+      "name_de": "Zwilling J.A. Henckels Messer & Töpfe",
+      "category": "送领导客户",
+      "price_range": "单把主厨刀 40-120 欧；套装 150-400 欧",
+      "where_to_buy": [
+        "Zwilling 品牌专卖店（杜塞尔多夫/法兰克福）",
+        "Galeria 商场厨具层",
+        "Kaufhof/Karstadt",
+        "法兰克福机场免税店",
+        "Amazon.de"
+      ],
+      "why": "德国厨具第一品牌，做工与钢材口碑极佳，送领导客户体面且有实用价值；德国本土价格常比国内低 20-40%。",
+      "customs_note": "刀具（含厨具刀）必须托运，手提行李严禁携带；建议保留原包装与发票以便退税和海关查验；单件超 5000 元人民币需申报，自用合理数量免税。",
+      "source_url": "https://www.zwilling.com/de/"
+    },
+    {
+      "name_zh": "菲仕乐 Fissler 锅具",
+      "name_de": "Fissler Töpfe und Pfannen",
+      "category": "送领导客户",
+      "price_range": "单锅 50-150 欧；套装 200-500 欧",
+      "where_to_buy": [
+        "Fissler 品牌专卖店",
+        "Galeria 商场",
+        "Kaufhof/Karstadt",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国高端锅具代表，压力锅与不锈钢锅在商务送礼中辨识度高，做工扎实、保修长。",
+      "customs_note": "锅具属普通自用物品，可托运或手提（体积大建议托运）；保留发票以便退税；同类物品数量过多可能被认定为货物。",
+      "source_url": "https://www.fissler.com/de/"
+    },
+    {
+      "name_zh": "WMF 厨具与餐具",
+      "name_de": "WMF Besteck und Küchenhelfer",
+      "category": "送领导客户",
+      "price_range": "餐具套装 60-300 欧；小工具 15-40 欧",
+      "where_to_buy": [
+        "WMF 品牌专卖店",
+        "Galeria 商场",
+        "Kaufhof/Karstadt",
+        "法兰克福机场免税店",
+        "WMF 工厂店（Geislingen）"
+      ],
+      "why": "德国国民厨具品牌，餐具与咖啡器具设计精良、价格梯度大，适合按关系亲疏分档送礼。",
+      "customs_note": "餐具可托运或手提；含刀具的组合套装必须托运；保留退税单；入境中国自用合理数量免税，超量需申报。",
+      "source_url": "https://www.wmf.com/de/"
+    },
+    {
+      "name_zh": "凌美 Lamy 钢笔",
+      "name_de": "Lamy Füllfederhalter",
+      "category": "送领导客户",
+      "price_range": "Safari 20-30 欧；Studio/Dialog 80-300 欧",
+      "where_to_buy": [
+        "Lamy 品牌专卖店",
+        "Galeria 文具层",
+        "Müller 日化/文具店",
+        "法兰克福机场免税店",
+        "Kaufhof/Karstadt"
+      ],
+      "why": "德国设计经典钢笔，Safari 系列是人手一支的入门款，Dialog 系列适合送高层；德国售价明显低于国内专柜。",
+      "customs_note": "钢笔属普通文具可手提；墨水（液体）单瓶 ≤100ml 才能手提，否则必须托运；保留发票便于退税。",
+      "source_url": "https://www.lamy.com/de/"
+    },
+    {
+      "name_zh": "Kaweco 钢笔",
+      "name_de": "Kaweco Füllfederhalter",
+      "category": "送领导客户",
+      "price_range": "Sport 系列 25-60 欧；AL Sport 金属款 70-120 欧",
+      "where_to_buy": [
+        "Kaweco 品牌专卖店/授权文具店",
+        "Galeria 文具层",
+        "Müller",
+        "独立文具店（Schreibwaren）",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国海德堡老牌钢笔，八角短杆设计复古独特，比 Lamy 更小众有品味，适合送给懂文具的领导。",
+      "customs_note": "钢笔可手提；配套墨水瓶等液体单瓶 ≤100ml 才能手提；保留发票退税；礼品包装盒建议保留以证明自用。",
+      "source_url": "https://www.kaweco-pen.com/"
+    },
+    {
+      "name_zh": "德国葡萄酒（雷司令 Riesling）",
+      "name_de": "Deutscher Riesling / Weißwein",
+      "category": "送领导客户",
+      "price_range": "日常款 8-20 欧/瓶；名庄/冰酒 30-100 欧以上",
+      "where_to_buy": [
+        "美因茨/吕德斯海姆酒庄直购（Vinothek）",
+        "Kaufland/REWE 超市酒区",
+        "Galeria 食品层",
+        "法兰克福机场免税店",
+        "圣诞市场酒摊"
+      ],
+      "why": "德国是雷司令故乡，摩泽尔与莱茵高产区品质世界公认；酒庄直购可买到国内见不到的干型（Trocken）与冰酒。",
+      "customs_note": "酒精饮料入境中国限额：12 度以上酒精饮料 1500 毫升（约 2 瓶）；烟酒有限额，超额需申报纳税；液体单瓶 ≤100ml 才能手提，整瓶酒必须托运；建议原箱托运防碎。",
+      "source_url": "https://www.deutscheweine.de/"
+    },
+    {
+      "name_zh": "Käthe Wohlfahrt 圣诞饰品",
+      "name_de": "Käthe Wohlfahrt Weihnachtsschmuck",
+      "category": "送领导客户",
+      "price_range": "小挂饰 8-20 欧；木制音乐盒/拱灯 40-200 欧",
+      "where_to_buy": [
+        "Käthe Wohlfahrt 专卖店（罗滕堡总店/法兰克福/科隆）",
+        "Rothenburg 圣诞村",
+        "圣诞市场（11 月下旬起）",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国圣诞装饰高端品牌，手工木制工艺品带德国原产标签，送领导客户既有节日寓意又有收藏价值。",
+      "customs_note": "木制品属普通物品可手提或托运；注意部分木质工艺品（含未处理木材）可能被中国海关要求检疫，建议购买有清漆处理、有品牌包装的成品；玻璃挂饰需防碎包装。",
+      "source_url": "https://www.kaethe-wohlfahrt.com/"
+    },
+    {
+      "name_zh": "德国啤酒杯（Stein）",
+      "name_de": "Bierstein / Bierkrug",
+      "category": "送领导客户",
+      "price_range": "普通款 10-25 欧；带盖锡盖/彩绘款 25-80 欧",
+      "where_to_buy": [
+        "科隆/杜塞尔多夫老城纪念品店",
+        "啤酒品牌专卖（Früh、Kölsch）",
+        "圣诞市场",
+        "Galeria 家居层",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国啤酒文化象征，带锡盖或地区彩绘的 Stein 极具德国味道，价格适中适合批量送人。",
+      "customs_note": "陶瓷/玻璃制品可手提或托运，建议托运以免碎裂；若杯内附酒类需按酒类限额；保留发票以备退税。",
+      "source_url": "https://www.duesseldorf-tourismus.de/"
+    },
+    {
+      "name_zh": "Doppelherz 双心保健品",
+      "name_de": "Doppelherz Nahrungsergänzung",
+      "category": "送家人",
+      "price_range": "单盒 5-15 欧；套装/大包装 15-35 欧",
+      "where_to_buy": [
+        "DM",
+        "Rossmann",
+        "Müller",
+        "Kaufland",
+        "网上药店（Shop Apotheke）"
+      ],
+      "why": "德国国民保健品牌，鱼油、辅酶 Q10、关节与眼部营养品种类齐全，价格远低于国内同款，长辈接受度高。",
+      "customs_note": "保健品属自用物品，合理数量免税；不要带含违禁成分（如某些减肥/激素类）的产品；保留原包装与中文说明更便于说明用途；数量过多可能被要求申报。",
+      "source_url": "https://www.doppelherz.de/"
+    },
+    {
+      "name_zh": "DM 自有品牌 Balea 护肤",
+      "name_de": "Balea (dm-Eigenmarke) Pflege",
+      "category": "送家人",
+      "price_range": "单件 1-10 欧（面霜 3-6 欧，安瓶 1-2 欧/支）",
+      "where_to_buy": [
+        "DM 门店（德国境内最多）",
+        "Rossmann",
+        "Müller",
+        "网上 dm.de"
+      ],
+      "why": "德国性价比之王，Balea 面霜、安瓶、面膜单价极低但口碑好，适合大批量带给家人朋友，不心疼预算。",
+      "customs_note": "护肤品属自用物品可托运；液体/膏体单瓶 ≤100ml 才能手提，超过必须托运；国内对化妆品个人自用合理数量免税，超量可能被海关征税。",
+      "source_url": "https://www.dm.de/balea"
+    },
+    {
+      "name_zh": "Nivea 妮维雅护肤",
+      "name_de": "Nivea Pflegeprodukte",
+      "category": "送家人",
+      "price_range": "单件 3-12 欧；礼盒 15-25 欧",
+      "where_to_buy": [
+        "DM",
+        "Rossmann",
+        "Müller",
+        "Kaufland",
+        "Galeria"
+      ],
+      "why": "德国本土品牌（汉堡 Beiersdorf），德国版配方与国内版不同，价格约为国内 1/2-1/3，经典蓝罐面霜广受家人欢迎。",
+      "customs_note": "膏体/液体单瓶 ≤100ml 才能手提，否则托运；自用合理数量免税；注意保留购物小票以备退税与查验。",
+      "source_url": "https://www.nivea.de/"
+    },
+    {
+      "name_zh": "Sennheiser 森海塞尔耳机",
+      "name_de": "Sennheiser Kopfhörer",
+      "category": "送家人",
+      "price_range": "入门款 30-80 欧；中高端 150-400 欧",
+      "where_to_buy": [
+        "Media Markt",
+        "Saturn",
+        "Galeria 电器层",
+        "Sennheiser 专卖店",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国音频老牌，耳机音质与做工可靠，德国售价常低于国内；给家人尤其学生党很实用。",
+      "customs_note": "电子产品可手提或托运；含锂电池的设备必须随身携带（禁止托运）；保留发票以便退税；单件超 5000 元人民币需申报。",
+      "source_url": "https://www.sennheiser.com/de-de"
+    },
+    {
+      "name_zh": "德国木制玩具（Haba / Playmobil）",
+      "name_de": "Holzspielzeug von Haba / Playmobil",
+      "category": "送家人",
+      "price_range": "Haba 小件 10-30 欧；Playmobil 套装 15-60 欧",
+      "where_to_buy": [
+        "Müller 玩具部",
+        "Kaufland 玩具区",
+        "Galeria 玩具层",
+        "专业玩具店（Spielwarengeschäft）",
+        "圣诞市场木玩具摊"
+      ],
+      "why": "德国木制玩具以安全环保著称（Haba 为德国本土品牌），Playmobil 也是德国制造设计，送给有小孩的家人非常合适。",
+      "customs_note": "木制玩具可手提或托运；未处理原木制品可能受检疫限制，建议带品牌包装的成品玩具；保留发票。",
+      "source_url": "https://www.haba.de/"
+    },
+    {
+      "name_zh": "Ritter Sport 方块巧克力",
+      "name_de": "Ritter Sport Schokolade",
+      "category": "送朋友同事",
+      "price_range": "单块 1.5-3 欧；礼盒/多口味装 10-25 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "DM/Rossmann",
+        "Ritter Sport 工厂店（Waldenbuch）",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国最具辨识度的方块巧克力，口味极多（含德国限定口味），价格便宜、数量多，最适合办公室分发。",
+      "customs_note": "巧克力可手提或托运；注意含酒心/含肉馅（极少）口味需谨慎；高温易融化，建议托运并放在行李中间避免阳光直射。",
+      "source_url": "https://www.ritter-sport.de/"
+    },
+    {
+      "name_zh": "Milka 妙卡巧克力",
+      "name_de": "Milka Schokolade",
+      "category": "送家人",
+      "price_range": "单块 1-2 欧；大板 2-4 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "DM",
+        "Rossmann",
+        "机场免税店"
+      ],
+      "why": "德国超市日常价极低，德国版口味（如 Alpine Milk）与国内不同，适合大批量采购给家人分享。",
+      "customs_note": "巧克力类可携带；含坚果/杏仁口味注意过敏人群；高温易融化建议托运；合理自用数量免税。",
+      "source_url": "https://www.milka.de/"
+    },
+    {
+      "name_zh": "Haribo 小熊糖",
+      "name_de": "Haribo Gummibärchen",
+      "category": "送朋友同事",
+      "price_range": "小袋 1-2 欧；大袋/礼盒 3-10 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "DM",
+        "Rossmann",
+        "Haribo 工厂店（波恩）",
+        "机场免税店"
+      ],
+      "why": "德国国民软糖，波恩是原产地；德国版口味与包装更多，价格便宜、体积小、耐运输，是送同事的性价比之王。",
+      "customs_note": "糖果类可携带；注意不含肉类明胶问题（中国对肉类制品禁入，普通明胶软糖不属肉类制品，但如含肉成分的零食严禁）；合理自用数量免税。",
+      "source_url": "https://www.haribo.com/de-de"
+    },
+    {
+      "name_zh": "Lebkuchen 德国姜饼",
+      "name_de": "Lebkuchen / Nürnberger Lebkuchen",
+      "category": "送家人",
+      "price_range": "小盒 3-8 欧；精美铁盒 10-25 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "圣诞市场（11 月下旬起）",
+        "亚琛 Printen 老店",
+        "法兰克福机场免税店"
+      ],
+      "why": "纽伦堡姜饼是德国圣诞传统点心，铁盒装送礼体面；10 月底超市已开始上架圣诞食品，正好赶上行程。",
+      "customs_note": "烘焙糕点可携带；表面糖霜/巧克力易碎，建议手提或用衣物包裹；注意部分姜饼含酒精（Weinlebkuchen）需按酒类理解；合理自用免税。",
+      "source_url": "https://www.christkindlesmarkt.de/"
+    },
+    {
+      "name_zh": "德国啤酒（瓶装/听装）",
+      "name_de": "Deutsches Bier (Flaschen/Dosen)",
+      "category": "送朋友同事",
+      "price_range": "超市 0.5-2 欧/瓶；精酿/礼盒 10-30 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "啤酒厂直营店（Früh、Uerige）",
+        "啤酒花园",
+        "机场免税店"
+      ],
+      "why": "德国啤酒纯净法（Reinheitsgebot）传统，Kölsch、Altbier、Weizen 各有特色；超市价格极低，适合分送同事。",
+      "customs_note": "酒精饮料限额：12 度以上 1500 毫升（约 2 瓶 750ml），12 度以下不受此限但仍属自用范围；烟酒有限额，超额需申报纳税；液体单瓶 ≤100ml 才能手提，啤酒必须托运，且玻璃瓶极易碎需加固包装。",
+      "source_url": "https://www.deutscher-bierbrauerbund.de/"
+    },
+    {
+      "name_zh": "德国咖啡（Tchibo / Jacobs）",
+      "name_de": "Deutscher Kaffee (Tchibo, Jacobs, Dallmayr)",
+      "category": "送朋友同事",
+      "price_range": "250g 咖啡豆/粉 4-9 欧；礼盒 10-25 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "Tchibo 专卖店",
+        "DM",
+        "Dallmayr 专卖店（慕尼黑）",
+        "机场免税店"
+      ],
+      "why": "Tchibo、Jacobs、Dallmayr 都是德国家喻户晓的咖啡品牌，德国烘焙风味与国内不同，办公室同事接受度高。",
+      "customs_note": "咖啡属普通食品可携带；咖啡豆/粉需原包装密封（中国对植物种子类有检疫要求，烘焙咖啡豆一般允许但建议保留商业包装）；合理自用数量免税。",
+      "source_url": "https://www.tchibo.de/"
+    },
+    {
+      "name_zh": "Balea 护手霜（伴手礼小件）",
+      "name_de": "Balea Handcreme",
+      "category": "送朋友同事",
+      "price_range": "0.8-3 欧/支",
+      "where_to_buy": [
+        "DM",
+        "Rossmann",
+        "Müller"
+      ],
+      "why": "单价不到 1 欧却好用，是德国旅行最经典的「人手一支」小礼物，适合批量买十几支分送同事。",
+      "customs_note": "膏体单支通常 ≤100ml 可手提，但仍建议统一托运；自用合理数量免税；超过个人自用数量可能被认定为代购。",
+      "source_url": "https://www.dm.de/balea"
+    },
+    {
+      "name_zh": "德国果酱 / 蜂蜜",
+      "name_de": "Marmelade / Honig",
+      "category": "送朋友同事",
+      "price_range": "2-8 欧/罐；特色蜂蜜 8-20 欧",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "DM",
+        "周末市集（Wochenmarkt）",
+        "圣诞市场"
+      ],
+      "why": "德国果酱含果量高、口味多（樱桃、杏、森林莓），德国森林蜂蜜也很有特色，价格低且包装朴素实在。",
+      "customs_note": "果酱（加工果蔬制品）一般可携带，但新鲜果蔬、蛋奶制品禁止入境中国；蜂蜜属动物源性产品，中国海关对入境蜂蜜有严格限制（通常禁止携带），建议不要购买蜂蜜带回；果酱需原厂密封包装。",
+      "source_url": "https://www.zoll.de/"
+    },
+    {
+      "name_zh": "DM / Rossmann 日用品（洗发水、牙膏、维生素）",
+      "name_de": "Drogerie-Artikel (dm, Rossmann)",
+      "category": "自用",
+      "price_range": "1-10 欧/件",
+      "where_to_buy": [
+        "DM",
+        "Rossmann",
+        "Müller",
+        "Kaufland"
+      ],
+      "why": "德国日化价格全球最低之一，自用囤货最划算：洗发水、牙膏、泡腾片、维生素、创可贴都比国内便宜很多。",
+      "customs_note": "液体单瓶 ≤100ml 才能手提，超过必须托运；药品类（非处方）自用少量可带，含处方成分或麻醉类严禁；数量过大可能被认定为商业用途。",
+      "source_url": "https://www.dm.de/"
+    },
+    {
+      "name_zh": "德国刀具（自用/家用）",
+      "name_de": "Deutsche Messer (Zwilling, Wüsthof, Victorinox)",
+      "category": "自用",
+      "price_range": "单把 25-120 欧；套装 100-300 欧",
+      "where_to_buy": [
+        "Zwilling/Wüsthof 专卖店",
+        "Galeria 厨具层",
+        "Kaufhof/Karstadt",
+        "Media Markt/Saturn 厨具区",
+        "法兰克福机场免税店"
+      ],
+      "why": "德国刀具钢材与手感公认最好，自用一把好主厨刀能用十几年，比国内同款便宜 20-40%。",
+      "customs_note": "刀具（含厨具刀）必须托运，手提行李严禁携带（哪怕是厨房用刀）；建议原包装+硬盒加固；保留发票以便退税；入境中国自用合理数量免税。",
+      "source_url": "https://www.zwilling.com/de/"
+    },
+    {
+      "name_zh": "德国啤酒（自用/住处小酌）",
+      "name_de": "Deutsches Bier zum Selbstgenuss",
+      "category": "自用",
+      "price_range": "0.5-2 欧/瓶（超市）",
+      "where_to_buy": [
+        "Kaufland",
+        "REWE",
+        "EDEKA",
+        "DM（部分门店）",
+        "啤酒厂直营店",
+        "啤酒花园"
+      ],
+      "why": "在德国期间晚上在酒店尝当地 Kölsch、Altbier、Weizen，是理解德国生活最便宜的方式；也可少量带回自饮。",
+      "customs_note": "带回中国酒精饮料限额：12 度以上 1500 毫升（约 2 瓶 750ml）；液体必须托运且玻璃瓶易碎；烟酒有限额，超额需申报纳税。",
+      "source_url": "https://www.zoll.de/"
+    }
+  ],
+  "taxRefund": [
+    "同一家店单笔消费满 50.01 欧即可申请退税（德国法定最低限额），低于此额度不能开退税单；同一商场不同专柜通常分开计算，务必在同一家店/同一张发票内凑够金额。",
+    "结账时主动索取退税单（Tax-Free Form / Ausfuhrbescheinigung），并出示护照填写姓名、地址、护照号；没有退税单和原始发票（Rechnung）就无法退税，事后补办基本不可能。",
+    "商品必须在购买后 3 个月内随本人带离欧盟，且保持未使用、未拆封、标签完整；已使用的商品海关有权拒绝盖章。",
+    "机场流程：先到海关（Zoll）柜台出示商品、发票与退税单，海关查验后在退税单上盖章（Ausfuhrbescheinigung）；盖章后才可去 Global Blue / Planet 等退税公司柜台领现金或办理退卡。",
+    "Global Blue（蓝联）与 Planet（原 Premier Tax Free）是德国两大主流退税公司，另有部分商家使用自家或其它代理；不同公司柜台位置与营业时间不同，法兰克福机场需按航站楼找对应柜台。",
+    "法兰克福机场旺季（含 10 月商务出行高峰）海关与退税柜台排队时间很长，建议至少提前 3 小时到达机场，先办退税盖章再托运行李（托运前必须让海关看到商品）。",
+    "未加盖海关章的退税单无效，无法退税，也无法事后补办；若商品已托运而没先找海关查验，通常就失去退税资格。",
+    "退税到账方式：现金退税立即可取但手续费较高、汇率较差；退回信用卡/支付宝到账慢（数周至数月）但比例更高；大额退税建议选择退卡并保留退税单副本编号以便追踪。",
+    "德国标准增值税率 19%（食品、书籍等为 7%），退税金额不是 19% 全额返还，退税公司会扣除手续费，实际到手通常为消费额的 8%-14%，具体以退税单显示为准。",
+    "刀具、锅具、酒类等商品在海关查验时可能被要求开箱，务必放在托运行李最上层并提前告知海关；酒类退税通常需保持密封原装。",
+    "若在欧盟多国购物，只需在离开欧盟的最后一个机场统一办理海关盖章（例如从法兰克福离境就在法兰克福盖章），不要在中间转机国重复排队。"
+  ],
+  "warnings": [
+    "肉类制品严禁携带入境中国：香肠、火腿、肉干、腊肠、肉松、含肉馅食品（含部分德国超市的肉味零食）一律不要购买带回，中国海关对肉类及其制品实施严格禁令，查到将被没收并可能罚款。",
+    "刀具（包括双立人/菲仕乐/三叉等厨具刀）必须托运，手提行李严禁携带；机场安检会直接没收，务必放入托运行李并加固包装。",
+    "莱茵河右岸铁路 2026/7/10–12/12 大整修（Troisdorf–Wiesbaden 段），覆盖整个行程期：吕德斯海姆（Rüdesheim）、阿斯曼斯豪森站无列车服务，DB 巴士替代每 2 小时才一班；部分平交道口永久关闭，自驾同样受影响。去吕德斯海姆请改走「法兰克福 Hbf → RE2 → 宾根 Bingen Hbf（约 1 小时）→ 渡轮/步行至吕德斯海姆」，不要按旧时刻表买直达火车票。",
+    "周日德国商店关门：10/18 与 10/25 两个周日，超市、商场（Galeria、Kaufhof）、品牌专卖店、DM/Rossmann 基本全天不营业，仅加油站便利店、火车站商店、餐厅咖啡馆营业；伴手礼采购必须安排在周六。特别注意科隆大教堂周日内部仅 13:30–16:30 开放（最后入场 16:15），上午去只能看外观。",
+    "10 月底德国约 17:00–17:30 天黑，所有户外行程（哲学家小径、城墙步道、莱茵河畔、葡萄园缆车）必须在 16:30 前完成并开始返程。",
+    "10/25（周日）当天德国夏令时结束，03:00 时钟回调 1 小时至 02:00；列车与 S-Bahn 按当地时间运行，返程班次务必以 DB 应用显示的当地时间为准，不要按前一天的习惯推算。",
+    "2026 年吕德斯海姆缆车（Seilbahn Rüdesheim）3/21–11/1 运营，单程 7.50 欧、往返 12 欧；但 Ring-Tour / Romantik-Tour / 阿斯曼斯豪森吊椅 2026 年因故障停运，联票不可用，只能买单程或往返票。",
+    "科隆大教堂 2026 年 7 月 1 日起内部参观收费：成人 12 欧（优惠 6 欧），登塔 8 欧（4 欧），宝库 8 欧（4 欧），登塔+宝库联票 12 欧（6 欧）；免费进入仅限北门廊祈祷/点蜡烛。",
+    "已废止/停售票种不要买：Schönes-Wochenende-Ticket 已于 2019/6/8 废止，Hessen-Ticket 已停售，网上旧攻略不要再参考。",
+    "可用的团体票：Quer-durchs-Land-Ticket（全德慢车日票，仅 RB/RE/IRE/S-Bahn）1 人 51 欧 / 2 人 63 欧 / 3 人 75 欧 / 4 人 87 欧 / 5 人 99 欧，工作日 9:00–次日 03:00、周末与法定假日 00:00–次日 03:00 有效；24hTicket NRW 5 Personen 59.80 欧（单人版 39.80 欧）；Rheinland-Pfalz/Saarland-Ticket 1–5 人分别 30/40/50/60/70 欧；Baden-Württemberg-Ticket 首人 27 欧、每增 1 人 +9 欧（4 人 54 欧），全天 00:00–次日 03:00 有效。自费买全价 ICE/IC 票远比团体慢车票贵。",
+    "液体携带规定：酒、护肤水、墨水等单瓶 ≤100ml 才能手提登机，超过必须托运；整瓶葡萄酒/啤酒必须托运并做防碎包装。",
+    "烟酒入境中国有限额（酒精饮料 12 度以上 1500 毫升，香烟限额另计），超额需走红色通道申报纳税，隐瞒被查将面临罚款。",
+    "新鲜水果蔬菜、蛋类、奶制品（含奶酪、鲜奶、含肉奶制品）禁止携带入境中国；蜂蜜等动物源性产品同样受严格限制，建议不买。",
+    "退税注意：同一家店单笔满 50.01 欧才可开退税单；商品须 3 个月内带离欧盟且未使用；先到机场海关盖章再去退税公司领钱，未盖章的退税单无效；法兰克福机场旺季请提前 3 小时到达。",
+    "保健品与药品：Doppelherz 等保健品自用合理数量可带；含处方成分、麻醉类或中国禁用成分的药品严禁携带，购买前核对成分。"
+  ]
+}

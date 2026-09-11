@@ -13,7 +13,7 @@
       "departTz": "北京时间",
       "arrive": "06:45",
       "arriveTz": "德国时间",
-      "duration": "约 10 小时 55 分（含时差）"
+      "duration": "约 11 小时 00 分（按公布时刻与时差计算）"
     },
     "inbound": {
       "date": "2026-11-01",
@@ -26,7 +26,7 @@
       "arrive": "06:55",
       "arriveDate": "2026-11-02",
       "arriveTz": "北京时间",
-      "duration": "约 10 小时 25 分（含时差）"
+      "duration": "约 10 小时 25 分（按公布时刻与时差计算）"
     },
     "startDate": "2026-10-10",
     "endDate": "2026-11-02",
@@ -45,7 +45,7 @@
       "title": "绵阳 → 成都天府",
       "titleEn": "Mianyang → Chengdu Tianfu",
       "transport": "汽车",
-      "cost": 150,
+      "costCny": 150,
       "detail": "国内段集结，前往成都天府国际机场，行李整理与出境材料复核。",
       "tags": ["国内段"],
       "highlight": false
@@ -61,7 +61,7 @@
       "title": "CA431 成都天府 → 法兰克福 → 杜塞尔多夫",
       "titleEn": "CA431 Chengdu – Frankfurt – Düsseldorf",
       "transport": "飞机",
-      "cost": 9000,
+      "costCny": 9000,
       "detail": "01:45 成都天府起飞，06:45（德国时间）抵达法兰克福；转乘前往杜塞尔多夫（约 227 公里，中转开车 2 小时 / 火车 2 小时）。",
       "tags": ["国际航班", "入境日", "中转"],
       "highlight": true,
@@ -83,7 +83,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公，审计工作启动会、资料交接与工作底稿准备。",
       "tags": ["现场办公"],
       "highlight": false
@@ -99,7 +99,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公，凭证抽查与访谈。",
       "tags": ["现场办公"],
       "highlight": false
@@ -115,7 +115,7 @@
       "title": "查看无忧达仓库（Unna）",
       "titleEn": "Warehouse Inspection · Unna",
       "transport": "开车",
-      "cost": 0,
+      "costCny": 0,
       "detail": "杜塞尔多夫 → 翁纳 Unna，单程约 84 公里，实地查看无忧达仓库存货与出入库管理。",
       "tags": ["仓库盘点", "84 公里"],
       "highlight": false
@@ -131,7 +131,7 @@
       "title": "查看 kemena 仓库（Löhne）",
       "titleEn": "Warehouse Inspection · Löhne",
       "transport": "开车",
-      "cost": 0,
+      "costCny": 0,
       "detail": "杜塞尔多夫 → 勒讷 Löhne，单程约 227 公里，实地查看 kemena 仓库。",
       "tags": ["仓库盘点", "227 公里"],
       "highlight": false
@@ -147,7 +147,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公，仓库盘点结果汇总。",
       "tags": ["现场办公"],
       "highlight": false
@@ -163,7 +163,7 @@
       "title": "周末自助出行（推荐：科隆 / 莱茵河）",
       "titleEn": "Weekend Trip",
       "transport": "火车",
-      "cost": 0,
+      "costCny": 0,
       "detail": "首个周末，力荐科隆大教堂 + 莱茵河畔，或杜塞尔多夫老城 + 媒体港城市漫游。详见「周末出行」。",
       "tags": ["周末", "自助旅游"],
       "highlight": true
@@ -179,7 +179,7 @@
       "title": "周末自助出行（推荐：亚琛 / 埃森工业遗产）",
       "titleEn": "Weekend Trip",
       "transport": "火车",
-      "cost": 0,
+      "costCny": 0,
       "detail": "周日商店停业，适合人文历史线路：亚琛大教堂（世界遗产）或埃森关税同盟煤矿（世界遗产）。",
       "tags": ["周末", "自助旅游", "周日"],
       "highlight": true
@@ -195,7 +195,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公。",
       "tags": ["现场办公"],
       "highlight": false
@@ -211,7 +211,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公。",
       "tags": ["现场办公"],
       "highlight": false
@@ -227,7 +227,7 @@
       "title": "杜塞尔多夫现场办公（第一阶段收尾）",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "第一阶段现场工作收尾，赴柏林前资料整理。",
       "tags": ["现场办公", "阶段收尾"],
       "highlight": false
@@ -243,7 +243,7 @@
       "title": "杜塞尔多夫 → 柏林，走访零售渠道",
       "titleEn": "Düsseldorf → Berlin · Retail Channel Visit",
       "transport": "飞机",
-      "cost": 2000,
+      "costCny": 2000,
       "detail": "飞抵柏林（约 557 公里），走访零售渠道及大型商超，如 Media Markt、Kaufland。",
       "tags": ["渠道走访", "飞行", "557 公里"],
       "highlight": true
@@ -259,7 +259,7 @@
       "title": "柏林走访零售渠道及大型商超",
       "titleEn": "Berlin · Retail Channel Visit",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "继续走访 Media Markt、Kaufland 等连锁渠道，了解终端陈列与库存。",
       "tags": ["渠道走访"],
       "highlight": false
@@ -275,7 +275,7 @@
       "title": "柏林 → 法兰克福，走访零售渠道",
       "titleEn": "Berlin → Frankfurt · Retail Channel Visit",
       "transport": "飞机",
-      "cost": 2000,
+      "costCny": 2000,
       "detail": "飞抵法兰克福（约 551 公里），继续走访零售渠道及大型商超。",
       "tags": ["渠道走访", "飞行", "551 公里"],
       "highlight": true
@@ -291,7 +291,7 @@
       "title": "周末自助出行（推荐：海德堡 / 莱茵河谷）",
       "titleEn": "Weekend Trip",
       "transport": "火车",
-      "cost": 0,
+      "costCny": 0,
       "detail": "今日德国夏令时结束（03:00 回调为 02:00），时差变为 7 小时。推荐海德堡古堡或吕德斯海姆 + 莱茵河谷世界遗产。",
       "tags": ["周末", "自助旅游", "夏令时结束"],
       "highlight": true
@@ -307,9 +307,10 @@
       "title": "法兰克福 → 沃尔尼茨，查看 GBL 仓库",
       "titleEn": "Frankfurt → Wörnitz · GBL Warehouse",
       "transport": "火车",
-      "cost": 1000,
-      "detail": "乘火车前往沃尔尼茨 Wörnitz，查看 GBL 仓库（当地车程约 2 小时，194 公里）。",
+      "costCny": 1000,
+      "detail": "乘火车前往沃尔尼茨 Wörnitz，查看 GBL 仓库。该地为巴伐利亚中弗兰肯小镇，火车站为支线小站，法兰克福方向通常需在纽伦堡或安斯巴赫换乘，全程约 3.5–4 小时；末段到仓库建议由仓库方安排接送。",
       "tags": ["仓库盘点", "火车", "194 公里"],
+      "insight": "Wörnitz 本地住宿极少，且无 Uber/Bolt；若当日晚需就近过夜，建议住 Dinkelsbühl（约 13 公里）或罗滕堡（约 30 公里）。",
       "highlight": true
     },
     {
@@ -323,9 +324,10 @@
       "title": "沃尔尼茨 → 因戈尔施塔特，拜访 OEM 客户 IMTRON",
       "titleEn": "Wörnitz → Ingolstadt · OEM Customer IMTRON",
       "transport": "火车",
-      "cost": 1000,
-      "detail": "16:00 起程前往因戈尔施塔特；拜访 OEM 客户 IMTRON（车程约 2 小时，156 公里）。",
-      "tags": ["客户拜访", "火车", "156 公里"],
+      "costCny": 1000,
+      "detail": "16:00 起程前往因戈尔施塔特；拜访 OEM 客户 IMTron（Imtron GmbH，Media-Saturn-Str. 1, 85053 Ingolstadt）。注意：IMTron 就在因戈尔施塔特本地（MediaMarktSaturn 集团全资子公司，自有品牌 KOENIC/PEAQ/ok./ISY），自酒店前往仅 10–20 分钟车程；行程表所注「156 公里 / 2 小时」系从沃尔尼茨出发的里程。",
+      "tags": ["客户拜访", "IMTron", "156 公里"],
+      "insight": "客户位于因戈尔施塔特北部 MediaMarktSaturn / Saturn Arena 一带，与 10/22–10/24 走访的零售渠道属同一集团体系，可合并核对渠道与自有品牌数据。",
       "highlight": true
     },
     {
@@ -339,7 +341,7 @@
       "title": "因戈尔施塔特 → 杜塞尔多夫，返回办公场所",
       "titleEn": "Ingolstadt → Düsseldorf",
       "transport": "火车",
-      "cost": 2000,
+      "costCny": 2000,
       "detail": "乘火车返回杜塞尔多夫办公场所，全程约 537 公里（开车约 6 小时，ICE 约 5 小时）。",
       "tags": ["长途转场", "火车", "537 公里"],
       "highlight": true
@@ -355,7 +357,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "返回现场办公，第二阶段审计工作推进。",
       "tags": ["现场办公"],
       "highlight": false
@@ -371,7 +373,7 @@
       "title": "杜塞尔多夫现场办公",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "现场办公，问题清单沟通与确认。",
       "tags": ["现场办公"],
       "highlight": false
@@ -387,7 +389,7 @@
       "title": "杜塞尔多夫现场办公（末段）",
       "titleEn": "Düsseldorf · On-site Office",
       "transport": "—",
-      "cost": 0,
+      "costCny": 0,
       "detail": "末段现场办公与离场交接；如工作提前完成，可安排半日周边短途（科隆 / 波恩）。",
       "tags": ["现场办公"],
       "highlight": false
@@ -403,7 +405,7 @@
       "title": "杜塞尔多夫 → 法兰克福 → CA432 飞成都",
       "titleEn": "Düsseldorf → Frankfurt · CA432 to Chengdu",
       "transport": "飞机",
-      "cost": 11000,
+      "costCny": 11000,
       "detail": "08:00–12:00 杜塞尔多夫前往法兰克福（约 227 公里，开车 2 小时 / 火车 2 小时）；13:30 CA432 起飞。务必预留 3 小时办理值机、海关盖章与退税。",
       "tags": ["国际航班", "退税", "返程"],
       "highlight": true,
@@ -425,7 +427,7 @@
       "title": "成都天府 → 绵阳，行程结束",
       "titleEn": "Chengdu Tianfu → Mianyang",
       "transport": "汽车",
-      "cost": 150,
+      "costCny": 150,
       "detail": "06:55 抵达成都天府，入境后返回绵阳，全程结束。",
       "tags": ["入境", "国内段"],
       "highlight": false

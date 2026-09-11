@@ -21,6 +21,7 @@
   function today() { var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
   function fmtCN(d) { return d.getFullYear() + '年' + (d.getMonth() + 1) + '月' + d.getDate() + '日'; }
   function eur(n) { return '€' + n; }
+  function cny(n) { return '¥' + n; }
 
   var toastTimer = null;
   function toast(msg) {
@@ -100,18 +101,38 @@
     if (view === 'itinerary') renderItinerary();
   }
 
-  /** 支持 ?view=stay / #stay 深链，同时便于分享与收藏 */
+  /** 支持 ?view=stay / #view=stay&ttab=gift 深链，同时便于分享与收藏 */
   function syncHash(view) {
     try {
-      if (history.replaceState) history.replaceState(null, '', view === 'home' ? location.pathname + location.search : '#' + view);
-      else location.hash = view;
+      var q = [];
+      if (view !== 'home') q.push('view=' + view);
+      if (view === 'tips' && state.tipsTab !== 'guide') q.push('ttab=' + state.tipsTab);
+      if (view === 'outdoor' && state.outdoorTab !== 'weather') q.push('otab=' + state.outdoorTab);
+      if (view === 'stay' && state.stayCity) q.push('city=' + state.stayCity);
+      var frag = q.length ? '#' + q.join('&') : '';
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search + frag);
+      else location.hash = frag.replace(/^#/, '');
     } catch (e) { /* 本地 file:// 下忽略 */ }
   }
 
+  function urlParam(name) {
+    var src = location.search + '&' + location.hash.replace(/^#/, '');
+    var m = new RegExp('[?&#]' + name + '=([A-Za-z0-9_-]+)', 'i').exec(src);
+    return m ? m[1].toLowerCase() : '';
+  }
+
   function initialView() {
-    var m = /(?:^|[#?&])view=([a-z]+)/i.exec(location.search + location.hash) || /^#([a-z]+)$/i.exec(location.hash);
-    var v = m && m[1] ? m[1].toLowerCase() : 'home';
+    var v = urlParam('view') || urlParam('v');
     return VIEWS.indexOf(v) >= 0 ? v : 'home';
+  }
+
+  function applyInitialState() {
+    var tt = urlParam('ttab');
+    if (['guide', 'customs', 'checklist', 'gift', 'about'].indexOf(tt) >= 0) state.tipsTab = tt;
+    var ot = urlParam('otab');
+    if (['weather', 'transport', 'weekend'].indexOf(ot) >= 0) state.outdoorTab = ot;
+    var ct = urlParam('city');
+    if (ct) state.stayCity = ct;
   }
 
   /* ====================== 详情层 ====================== */
@@ -206,6 +227,10 @@
     var m = D.itinerary && D.itinerary.meta;
     if (!m) return;
     $('#flightCards').innerHTML = flightCard(m.outbound, 'out') + flightCard(m.inbound, 'in');
+    $('#flightCards').innerHTML +=
+      '<div class="notice info" style="margin-top:2px"><span class="ni">' + I.clock + '</span><div>' +
+      '<b>时差提醒</b><br>' + esc(m.note || '10月25日德国夏令时结束，时差由 6 小时变为 7 小时') +
+      '</div></div>';
   }
 
   function nextDayItem() {
@@ -290,7 +315,7 @@
     var b = D.budget;
     if (!b) { $('#budgetSummary').innerHTML = ''; return; }
     var est = b.estimates || {};
-    var detail = (est.detail || []).filter(function (x) { return x.item !== '合计'; });
+    var detail = (est.detail || []).filter(function (x) { return x.item.indexOf('合计') < 0; });
     $('#budgetSummary').innerHTML = '' +
       '<div class="card budget-card">' +
         '<div class="budget-grid">' +
@@ -298,14 +323,20 @@
             return '<div class="bstat">' +
               '<div class="bk">' + esc(x.item) + '</div>' +
               '<div class="bv">' + esc(x.eur) + '<small> €</small></div>' +
-              '<div class="bs">全团 4 人</div>' +
+              '<div class="bs">' + esc(x.note || '每人') + '</div>' +
             '</div>';
           }).join('') +
         '</div>' +
         '<div class="notice info" style="margin:13px 0 0">' +
           '<span class="ni">' + I.euro + '</span>' +
-          '<div><b>合计约 ' + esc(est.grandTotal || est.detail && est.detail[est.detail.length - 1].eur || 0) + ' €</b>（全团 4 人 · 21 晚）' +
-          '<br>' + esc(b.rateNote || '') + '</div>' +
+          '<div><b>每人合计约 ' + esc(est.headline) + ' €</b>（21 晚补贴上限）' +
+          '<br>全团 4 人上限合计约 ' + esc(est.teamTotal) + ' €<br>' +
+          esc(b.rateNote || '') + '</div>' +
+        '</div>' +
+        '<div class="notice warn" style="margin:10px 0 0">' +
+          '<span class="ni">' + I.bed + '</span>' +
+          '<div>' + esc((b.basis && b.basis.hotel) || '') + '<br>' +
+          esc((b.basis && b.basis.meal) || '') + '</div>' +
         '</div>' +
         '<button class="seg" style="width:100%;margin-top:11px;text-align:center" data-quick="budget">查看补贴标准明细</button>' +
       '</div>';
@@ -349,7 +380,7 @@
           '<div class="ttags">' +
             (d.transport && d.transport !== '—' ? '<span class="badge">' + esc(d.transport) + '</span>' : '') +
             '<span class="badge blue">' + esc(d.stayCity) + '</span>' +
-            (d.cost ? '<span class="badge gold">' + eur(d.cost) + '</span>' : '') +
+            (d.costCny ? '<span class="badge gold">' + cny(d.costCny) + '</span>' : '') +
             (d.tags || []).slice(0, 2).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') +
           '</div>' +
         '</div>' +
@@ -368,10 +399,13 @@
       row(I.pin, '住宿城市', d.stayCity, '') +
       row(d.transport === '飞机' ? I.plane : d.transport === '火车' ? I.train : d.transport === '开车' ? I.car : I.doc,
         '交通方式', d.transport || '—', '') +
-      (d.cost ? row(I.euro, '该项费用', eur(d.cost), '') : '') +
+      (d.costCny ? row(I.euro, '原表费用', cny(d.costCny), '行程原表【费用】列口径，人民币元') : '') +
       '</div>';
     h += '<div class="group-head"><span class="gi">' + I.doc + '</span><h3>安排详情</h3></div>';
     h += '<div class="notice info"><span class="ni">' + I.bulb + '</span><div>' + esc(d.detail) + '</div></div>';
+    if (d.insight) {
+      h += '<div class="notice warn"><span class="ni">' + I.sparkle + '</span><div><b>要点提示</b><br>' + esc(d.insight) + '</div></div>';
+    }
     if (d.segments && d.segments.length) {
       h += '<div class="group-head"><span class="gi">' + I.clock + '</span><h3>时间节点</h3></div>';
       h += '<div class="rows" style="border:1px solid var(--c-line);border-radius:var(--r-md);overflow:hidden">' +
@@ -434,14 +468,19 @@
     h += '<div class="city-head">' +
       '<div class="ch-top">' +
         '<div><h3>' + esc(d.city) + '</h3><div class="ch-en">' + esc(d.cityEn || '') + '</div></div>' +
-        '<div class="budget-ring"><div class="brv">' + esc(d.budget_eur) + '€</div><div class="brk">住宿上限</div></div>' +
+        '<div class="budget-ring"><div class="brv">' + esc(d.budget_eur) + '€</div><div class="brk">单人间/晚</div></div>' +
       '</div>' +
       '<div class="ch-meta">' +
         (nights ? '<span class="badge gold">住宿 ' + nights + ' 晚</span>' : '') +
-        '<span class="badge">餐饮 ' + esc(d.meal_eur || 60) + ' €/天</span>' +
+        '<span class="badge blue">每人单独一间</span>' +
+        '<span class="badge">餐补 ' + esc(d.meal_eur || 60) + ' €/天</span>' +
         '<span class="badge">其他 ' + esc(d.other_eur || 38) + ' €/天</span>' +
       '</div>' +
     '</div>';
+
+    h += '<div class="notice info"><span class="ni">' + I.bulb + '</span><div>' +
+      '<b>预算口径</b><br>住宿按<b>每人每晚</b>计，团组为 4 间单人间，单间须 ≤ ' + esc(d.budget_eur) + ' €/晚；' +
+      '餐补 ' + esc(d.meal_eur || 60) + ' €/天为<b>除早餐外</b>（午 + 晚），早餐在酒店解决。</div></div>';
 
     if (d.tips && d.tips.length) {
       h += '<div class="notice info"><span class="ni">' + I.bulb + '</span><div>' + d.tips.slice(0, 3).map(esc).join('<br>') + '</div></div>';
@@ -467,6 +506,7 @@
 
   function hotelCard(x) {
     var inB = x.within_budget !== false;
+    var single = x.single_price_eur || x.price_eur_low;
     return '<div class="card hotel-card">' +
       '<div class="hotel-top">' +
         '<div style="min-width:0">' +
@@ -474,8 +514,8 @@
           (x.name_en ? '<div class="hotel-en">' + esc(x.name_en) + '</div>' : '') +
         '</div>' +
         '<div class="hotel-price">' +
-          '<div class="hp">' + esc(x.price_eur_low) + '–' + esc(x.price_eur_high) + '</div>' +
-          '<div class="hpu">€ / 间 / 晚</div>' +
+          '<div class="hp">' + esc(single) + '</div>' +
+          '<div class="hpu">€ 单人间 / 晚</div>' +
         '</div>' +
       '</div>' +
       '<div class="hotel-tags">' +
@@ -483,6 +523,8 @@
         (x.breakfast_included ? '<span class="badge gold">含早餐</span>' : '<span class="badge">早餐另计</span>') +
         (x.stars ? '<span class="badge">' + esc(x.stars) + ' 星</span>' : '') +
         (x.rating ? '<span class="badge blue">★ ' + esc(String(x.rating).replace(/^Google\s*/, '')) + '</span>' : '') +
+        (x.price_eur_high && x.price_eur_high !== single
+          ? '<span class="badge">区间 ' + esc(x.price_eur_low) + '–' + esc(x.price_eur_high) + ' €</span>' : '') +
       '</div>' +
       '<div class="hotel-line">' +
         (x.address ? hl(I.pin, '地址', x.address) : '') +
@@ -628,6 +670,32 @@
     return h || empty('交通数据加载中…');
   }
 
+  function short(s, n) {
+    var t = String(s == null ? '' : s).trim();
+    if (t.length <= n) return t;
+    return t.slice(0, n) + '…';
+  }
+
+  /** 从自由文本票价里抽出主金额，如 "24hTicket NRW 5 Personen 59.80 欧…" → "€59.80" */
+  function fareShort(str) {
+    var t = String(str || '');
+    var m = t.match(/(\d+(?:[.,]\d+)?)\s*欧/);
+    if (m) return '≈€' + m[1].replace(',', '.');
+    m = t.match(/€\s*(\d+(?:[.,]\d+)?)/);
+    if (m) return '≈€' + m[1].replace(',', '.');
+    return t ? short(t, 8) : '参考';
+  }
+
+  /** 强度取括号前的部分，如 "低（全程平路…）" → "低" */
+  function intensityShort(str) {
+    var t = String(str || '适中').trim();
+    var i = t.indexOf('（');
+    if (i > 0) return t.slice(0, i);
+    i = t.indexOf('(');
+    if (i > 0) return t.slice(0, i);
+    return short(t, 4);
+  }
+
   var COVERS = {
     history: 'linear-gradient(135deg,#2A1F14,#0B1220)',
     river: 'linear-gradient(135deg,#122A33,#0B1220)',
@@ -656,10 +724,10 @@
           '<div class="trip-body">' +
             '<div class="trip-stats">' +
               '<div class="ts"><div class="tsk">单程</div><div class="tsv">' + esc(t.one_way_minutes) + ' 分</div></div>' +
-              '<div class="ts"><div class="tsk">往返</div><div class="tsv">' + esc(t.fare_eur || '参考') + '</div></div>' +
-              '<div class="ts"><div class="tsk">强度</div><div class="tsv">' + esc(t.intensity || '适中') + '</div></div>' +
+              '<div class="ts"><div class="tsk">交通费用</div><div class="tsv">' + esc(fareShort(t.fare_eur)) + '</div></div>' +
+              '<div class="ts"><div class="tsk">体力强度</div><div class="tsv">' + esc(intensityShort(t.intensity)) + '</div></div>' +
             '</div>' +
-            '<div class="hotel-why">' + esc(t.highlight || '') + '</div>' +
+            '<div class="hotel-why">' + esc(short(t.highlight, 120)) + '</div>' +
             '<div class="hotel-tags" style="margin-top:10px">' +
               '<span class="badge gold">' + esc(t.theme || '人文历史') + '</span>' +
               (t.recommended !== false ? '<span class="badge green">推荐</span>' : '<span class="badge amber">偏紧</span>') +
@@ -730,8 +798,56 @@
     if (state.tipsTab === 'guide') h = tipsGuide();
     else if (state.tipsTab === 'customs') h = tipsCustoms();
     else if (state.tipsTab === 'checklist') h = tipsChecklist();
+    else if (state.tipsTab === 'about') h = tipsAbout();
     else h = tipsGift();
     $('#tipsBody').innerHTML = h;
+  }
+
+  function tipsAbout() {
+    var m = D.itinerary && D.itinerary.meta;
+    var h = '<div class="card pad-sm">' +
+      '<div class="hotel-name">德国长虹商务出行助手</div>' +
+      '<div class="hotel-en">Changhong Germany Business Trip</div>' +
+      '<div class="hotel-why" style="margin-top:10px">' +
+      '面向' + esc((D.itinerary && D.itinerary.meta && D.itinerary.meta.team) || '审计工作组') + '的移动端出行助手，' +
+      '整合航班、住宿、餐饮、行程、周末出行、天气穿衣与出入境锦囊。' +
+      '全部数据离线内置，无追踪、无外部请求。</div>' +
+      '<div class="hotel-tags" style="margin-top:10px">' +
+        '<span class="badge gold">' + (m ? esc(m.startDate) + ' – ' + esc(m.endDate) : '') + '</span>' +
+        '<span class="badge blue">离线可用</span>' +
+        '<span class="badge green">可添加到主屏</span>' +
+      '</div>' +
+    '</div>';
+
+    h += '<div class="group-head"><span class="gi">' + I.doc + '</span><h3>数据来源</h3></div>';
+    h += '<div class="rows" style="border:1px solid var(--c-line);border-radius:var(--r-md);overflow:hidden">' +
+      row(I.cal, '行程与航班', '内部《德国境内行程安排》表', '含 CA431 / CA432、各地办公与仓库考察、住宿晚数') +
+      row(I.euro, '补贴标准', '内部《出差补贴标准》表', '住宿按人每晚、每人单独一间；餐饮 60 € 为除早餐外餐补') +
+      row(I.bulb, '出行注意事项', '《出国注意事项-德国篇》', '已整合核心与实用信息，并按 2026 年新规补充') +
+      row(I.bed, '酒店与餐饮', '公开信息核实（官方酒店站点、德国黄页、旅游官方站）', '价格为参考区间，非实时报价') +
+      row(I.clock, '日出日落', 'NOAA 太阳位置算法本地计算', '精度约 ±1 分钟，已含夏令时切换') +
+      row(I.train, '铁路票制', 'DB（德铁）官方票价与优惠票种', '施工与车次变动频繁，出行前请用 DB Navigator 复核') +
+    '</div>';
+
+    h += '<div class="group-head"><span class="gi">' + I.alert + '</span><h3>免责说明</h3></div>';
+    h += '<div class="notice warn"><span class="ni">' + I.alert + '</span><div>' +
+      '1. 酒店房价、餐厅人均、机票与火车票价、景点门票均为<b>参考区间</b>，会随展会档期、汇率与预订时间波动，请以官方渠道实时信息为准。<br>' +
+      '2. 德国铁路施工与车次调整频繁，本行程涉及的莱茵河右岸线路 2026/7/10–12/12 处于整修期，出行前务必用 DB Navigator 复核。' +
+      '</div></div>';
+    h += '<div class="notice danger"><span class="ni">' + I.ban + '</span><div>' +
+      '3. 海关与安检规则以官方最新公告为准；肉类制品、新鲜果蔬、蛋奶制品严禁携带入境中国，刀具必须托运。<br>' +
+      '4. 公务出行严禁携带涉密纸质材料与涉密存储介质出境，电子文档请提前脱敏。' +
+      '</div></div>';
+
+    h += '<div class="group-head"><span class="gi">' + I.phone + '</span><h3>使用提示</h3></div>';
+    h += '<div class="rows" style="border:1px solid var(--c-line);border-radius:var(--r-md);overflow:hidden">' +
+      row(I.app, '添加到主屏', '浏览器菜单 → 添加到主屏幕', '即可像 App 一样全屏打开，行程中无需联网') +
+      row(I.check, '核对清单进度', '保存在本机浏览器', '更换设备或清除浏览器数据会重置') +
+      row(I.wifi, '离线使用', '首次打开后自动缓存', '地下车库、仓库等无信号场景可正常查看') +
+    '</div>';
+
+    h += '<div class="footnote">本页内容仅供本次出行参考，不构成任何商业或法律建议。</div>';
+    return h;
   }
 
   var LEVEL_ICON = { must: 'id', danger: 'ban', warn: 'alert', good: 'sparkle', info: 'doc' };
@@ -918,6 +1034,10 @@
     var b = D.budget;
     if (!b) return;
     var h = '<div class="notice info"><span class="ni">' + I.euro + '</span><div>' + esc(b.effective) + '<br>' + esc(b.rateNote) + '</div></div>';
+    if (b.basis) {
+      h += '<div class="notice warn"><span class="ni">' + I.alert + '</span><div><b>口径说明</b><br>' +
+        esc(b.basis.hotel) + '<br>' + esc(b.basis.meal) + '<br>' + esc(b.basis.other) + '</div></div>';
+    }
     h += '<div class="group-head"><span class="gi">' + I.euro + '</span><h3>补贴标准（欧元/人）</h3></div>';
     h += '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12.5px">' +
       '<thead><tr style="background:rgba(200,169,106,.10)">' +
@@ -1139,6 +1259,7 @@
   /* ====================== 启动 ====================== */
   function boot() {
     bind();
+    applyInitialState();
     renderHero();
     renderFlights();
     renderNext();
@@ -1157,4 +1278,11 @@
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
+
+  // 注册 Service Worker（离线可用；file:// 下自动跳过）
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* 忽略注册失败 */ });
+    });
+  }
 })();

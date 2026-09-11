@@ -1,6 +1,10 @@
 # 临时/本地文件
+data/_staging/
+data/_*
 _shots/
 _tmp_*
+_ids.txt
+_js_*
 *.tmp
 node_modules/
 
@@ -9,8 +13,16 @@ _work/
 _research/
 research/
 fetch/
+raw/
+docs/
 *.ps1
+*.mjs.bak
+nfetch.mjs
 bb.html
+
+# 调研产出笔记（结论已并入 data/*.json）
+/*.md
+!README.md
 
 # 系统文件
 .DS_Store
